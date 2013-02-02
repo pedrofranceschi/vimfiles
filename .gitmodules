@@ -10,3 +10,6 @@
 [submodule "bundle/objc"]
 	path = bundle/objc
 	url = https://github.com/b4winckler/vim-objc.git
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = git://github.com/kien/ctrlp.vim.git
