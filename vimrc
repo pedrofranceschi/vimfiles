@@ -66,3 +66,6 @@ map <leader>tm :tabmove
 " Powerline options
 let g:Powerline_symbols = 'fancy'
 let g:Powerline_cache_enabled = 1
+
+" CtrlP - Works not only in ancestor directories of my working directory.
+let g:ctrlp_working_path_mode = 'a'
