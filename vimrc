@@ -53,15 +53,15 @@ set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLo
 set nohlsearch
 
 " Tab mappings.
-map <leader>tt :tabnew<cr>
-map <leader>te :tabedit
-map <leader>tc :tabclose<cr>
-map <leader>to :tabonly<cr>
-map <leader>tn :tabnext<cr>
-map <leader>tp :tabprevious<cr>
-map <leader>tf :tabfirst<cr>
-map <leader>tl :tablast<cr>
-map <leader>tm :tabmove
+map <leader>t :tabnew<cr>
+map <leader>e :tabedit
+map <leader>c :tabclose<cr>
+map <leader>o :tabonly<cr>
+map <leader>n :tabnext<cr>
+map <leader>p :tabprevious<cr>
+map <leader>f :tabfirst<cr>
+map <leader>l :tablast<cr>
+map <leader>m :tabmove
 
 " Powerline options
 let g:Powerline_symbols = 'fancy'
