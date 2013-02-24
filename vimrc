@@ -69,3 +69,6 @@ let g:Powerline_cache_enabled = 1
 
 " CtrlP - Works not only in ancestor directories of my working directory.
 let g:ctrlp_working_path_mode = 'a'
+
+" Yankring default mapping conflicts with CtrlP
+let g:yankring_replace_n_pkey = '<C-M>'
