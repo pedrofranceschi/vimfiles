@@ -1,31 +1,45 @@
 pedrofranceschi's vimfiles
 ========
 
-This is my vimfiles. I created them almost from scratch and adapted to my needs.
-Here's how to get up and running with 'em:
+These are my vimfiles. I created them almost from scratch when I started using Vim and adapted to my needs.
+
+#### What's included
+
+* [CtrlP](https://github.com/kien/ctrlp.vim)
+* [vim-objc](https://github.com/b4winckler/vim-objc)
+* [powerline](https://github.com/Lokaltog/vim-powerline)
+* [snipmate](https://github.com/msanders/snipmate.vim)
+* [tcomment](https://github.com/tomtom/tcomment_vim)
+* [YankRing](https://github.com/vim-scripts/YankRing.vim)
+
+#### Installing (step by step)
 
 Go to your home directory:
 
-``` cd ~ ```
-
+```
+cd ~
+```
 Clone my vimfiles repo:
 
-``` git clone --recursive https://github.com/pedrofranceschi/vimfiles.git ```
-
+```
+git clone --recursive https://github.com/pedrofranceschi/vimfiles.git
+```
 Rename the repo to .vim:
 
-``` mv vimfiles .vim ```
-
+```
+mv vimfiles .vim
+```
 Link vimrc and gvimrc to your home:
 
-``` ln -s .vim/vimrc .vimrc ```
-
-``` ln -s .vim/gvimrc .gvimrc ```
-
+```
+ln -s .vim/vimrc .vimrc
+ln -s .vim/gvimrc .gvimrc
+```
 Open .vim with Finder:
 
-``` open .vim ```
-
-Then double-click the "Monaco_Powerline.otf" file to install Powerline's Monaco font which supports fancy characters.
+```
+open .vim
+```
+Double-click the "Monaco_Powerline.otf" file to install Powerline's Monaco font which supports fancy characters.
 
 Restart vim and enjoy! :)
