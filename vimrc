@@ -28,7 +28,7 @@ set number                        " Show line numbers.
 set ruler                         " Show cursor position.
 
 set incsearch                     " Highlight matches as you type.
-set hlsearch                      " Highlight matches.
+set nohlsearch                    " Don't highlight matches.
 
 set nowrap                        " Turn off line wrapping.
 set scrolloff=3                   " Show 3 lines of context around the cursor.
@@ -48,9 +48,6 @@ set shiftwidth=4                 " And again, related.
 set laststatus=2                  " Show the status line all the time
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
-
-" Or use vividchalk
-set nohlsearch
 
 " Tab mappings.
 map <leader>t :tabnew<cr>
