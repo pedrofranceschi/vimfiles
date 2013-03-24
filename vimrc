@@ -73,4 +73,4 @@ let g:ctrlp_working_path_mode = 'a'
 " Yankring default mapping conflicts with CtrlP
 let g:yankring_replace_n_pkey = '<C-M>'
 
-map <C-S-F> :Ack!<space>
+map <C-F> :Ack!<space>
