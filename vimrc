@@ -11,6 +11,9 @@ filetype plugin indent on
 
 runtime macros/matchit.vim        " Load the matchit plugin.
 
+" Sets the colorscheme for terminal sessions too.
+colorscheme badwolf
+
 set showcmd                       " Display incomplete commands.
 set showmode                      " Display the mode you're in.
 
