@@ -1,7 +1,7 @@
 pedrofranceschi's vimfiles
 ========
 
-These are my vimfiles. I created them almost from scratch when I started using Vim and adapted to my needs.
+These are my vimfiles. I created them almost from scratch when I started using Vim and adapted them to my needs.
 
 #### What's included
 
