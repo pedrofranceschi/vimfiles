@@ -12,6 +12,7 @@ These are my vimfiles. I created them almost from scratch when I started using V
 * [snipmate](https://github.com/msanders/snipmate.vim)
 * [tcomment](https://github.com/tomtom/tcomment_vim)
 * [YankRing](https://github.com/vim-scripts/YankRing.vim)
+* [ack.vim](https://github.com/mileszs/ack.vim)
 
 #### Installing (step by step)
 
