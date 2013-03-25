@@ -13,6 +13,8 @@ These are my vimfiles. I created them almost from scratch when I started using V
 * [tcomment](https://github.com/tomtom/tcomment_vim)
 * [YankRing](https://github.com/vim-scripts/YankRing.vim)
 * [ack.vim](https://github.com/mileszs/ack.vim)
+* [vim-textobj-user](https://github.com/kana/vim-textobj-user)
+* [vim-textobj-rubyblock](https://github.com/nelstrom/vim-textobj-rubyblock)
 
 #### Installing (step by step)
 
