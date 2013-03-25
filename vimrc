@@ -74,3 +74,7 @@ let g:ctrlp_working_path_mode = 'a'
 let g:yankring_replace_n_pkey = '<C-M>'
 
 map <C-F> :Ack!<space>
+
+" Remaps textobj-rubyblock's bindings to vim's defaults
+omap aB ar
+omap iB ir
