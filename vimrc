@@ -73,6 +73,7 @@ let g:ctrlp_working_path_mode = 'a'
 " Yankring default mapping conflicts with CtrlP
 let g:yankring_replace_n_pkey = '<C-M>'
 
+" Brings Ack on Ctrl+F
 map <C-F> :Ack!<space>
 
 " Remaps textobj-rubyblock's bindings to vim's defaults
