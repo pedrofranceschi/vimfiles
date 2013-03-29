@@ -1,7 +1,5 @@
-"= Example Vim configuration.
-" Copy or symlink to ~/.vimrc or ~/_vimrc.
-
-set nocompatible                  " Must come first because it changes other options.
+" Must come first because it changes other options.
+set nocompatible
 
 " Enable pathogen
 call pathogen#infect()
@@ -9,46 +7,68 @@ filetype off
 syntax on
 filetype plugin indent on
 
-runtime macros/matchit.vim        " Load the matchit plugin.
+" Load the matchit plugin.
+runtime macros/matchit.vim
 
 " Sets the colorscheme for terminal sessions too.
 colorscheme badwolf
 
-set showcmd                       " Display incomplete commands.
-set showmode                      " Display the mode you're in.
+" Display incomplete commands.
+set showcmd
+" Display the mode you're in.
+set showmode
 
-set backspace=indent,eol,start    " Intuitive backspacing.
+" Intuitive backspacing.
+set backspace=indent,eol,start
+" Handle multiple buffers better.
+set hidden
 
-set hidden                        " Handle multiple buffers better.
+" Enhanced command line completion.
+set wildmenu
+" Complete files like a shell.
+set wildmode=list:longest
 
-set wildmenu                      " Enhanced command line completion.
-set wildmode=list:longest         " Complete files like a shell.
+" Case-insensitive searching.
+set ignorecase
+" But case-sensitive if expression contains a capital letter.
+set smartcase
 
-set ignorecase                    " Case-insensitive searching.
-set smartcase                     " But case-sensitive if expression contains a capital letter.
+" Show line numbers.
+set number
+" Show cursor position.
+set ruler
 
-set number                        " Show line numbers.
-set ruler                         " Show cursor position.
+" Highlight matches as you type.
+set incsearch
+" Don't highlight matches.
+set nohlsearch
 
-set incsearch                     " Highlight matches as you type.
-set nohlsearch                    " Don't highlight matches.
+" Turn off line wrapping.
+set nowrap    
+" Show 3 lines of context around the cursor.
+set scrolloff=3
 
-set nowrap                        " Turn off line wrapping.
-set scrolloff=3                   " Show 3 lines of context around the cursor.
+" Set the terminal's title
+set title
+" No beeping.
+set visualbell
 
-set title                         " Set the terminal's title
+" Don't make a backup before overwriting a file.
+set nobackup
+" And again.
+set nowritebackup
+" Keep swap files in one location
+set directory=$HOME/.vim/tmp//,.
 
-set visualbell                    " No beeping.
+" Global tab width.
+set tabstop=4
+" And again, related.
+set shiftwidth=4
+" Specific shiftwidth for ruby files
+autocmd FileType ruby set shiftwidth=2
 
-set nobackup                      " Don't make a backup before overwriting a file.
-set nowritebackup                 " And again.
-set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
-
-set tabstop=4                     " Global tab width.
-set shiftwidth=4                 " And again, related.
-"set expandtab                    " Use spaces instead of tabs
-
-set laststatus=2                  " Show the status line all the time
+" Show the status line all the time
+set laststatus=2
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
