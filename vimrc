@@ -72,16 +72,23 @@ set laststatus=2
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
+" Leader = ,
+let mapleader = ","
+
 " Tab mappings.
-map <leader>t :tabnew<cr>
-map <leader>e :tabedit
-map <leader>c :tabclose<cr>
-map <leader>o :tabonly<cr>
-map <leader>n :tabnext<cr>
-map <leader>p :tabprevious<cr>
-map <leader>f :tabfirst<cr>
-map <leader>l :tablast<cr>
-map <leader>m :tabmove
+nnoremap <leader>t :tabnew<cr>
+nnoremap <leader>e :tabedit
+nnoremap <leader>c :tabclose<cr>
+nnoremap <leader>o :tabonly<cr>
+nnoremap <leader>n :tabnext<cr>
+nnoremap <leader>p :tabprevious<cr>
+nnoremap <leader>f :tabfirst<cr>
+nnoremap <leader>l :tablast<cr>
+nnoremap <leader>m :tabmove
+
+" Edit and load vimrc mappings
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " Powerline options
 let g:Powerline_symbols = 'fancy'
@@ -94,8 +101,8 @@ let g:ctrlp_working_path_mode = 'a'
 let g:yankring_replace_n_pkey = '<C-M>'
 
 " Brings Ack on Ctrl+F
-map <C-F> :Ack!<space>
+noremap <C-F> :Ack!<space>
 
 " Remaps textobj-rubyblock's bindings to vim's defaults
-autocmd FileType ruby map aB ar
-autocmd FileType ruby map iB ir
+autocmd FileType ruby noremap aB ar
+autocmd FileType ruby noremap iB ir
