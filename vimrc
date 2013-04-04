@@ -86,9 +86,12 @@ nnoremap <leader>f :tabfirst<cr>
 nnoremap <leader>l :tablast<cr>
 nnoremap <leader>m :tabmove
 
-" Edit and load vimrc mappings
+" Edit and load vimrc
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
+
+" Toggles hlsearch
+nnoremap <leader>hs :set hlsearch!<cr>
 
 " Powerline options
 let g:Powerline_symbols = 'fancy'
