@@ -15,6 +15,8 @@ These are my vimfiles. I created them almost from scratch when I started using V
 * [ack.vim](https://github.com/mileszs/ack.vim)
 * [vim-textobj-user](https://github.com/kana/vim-textobj-user)
 * [vim-textobj-rubyblock](https://github.com/nelstrom/vim-textobj-rubyblock)
+* [fugitive](https://github.com/tpope/vim-fugitive)
+* [unimpaired](https://github.com/tpope/vim-unimpaired)
 
 #### Installing (step by step)
 
