@@ -107,5 +107,5 @@ let g:yankring_replace_n_pkey = '<C-M>'
 noremap <C-F> :Ack!<space>
 
 " Remaps textobj-rubyblock's bindings to vim's defaults
-autocmd FileType ruby noremap aB ar
-autocmd FileType ruby noremap iB ir
+autocmd FileType ruby map aB ar
+autocmd FileType ruby map iB ir
