@@ -38,15 +38,17 @@ Link vimrc and gvimrc to your home:
     ln -s .vim/vimrc .vimrc
     ln -s .vim/gvimrc .gvimrc
 
-Open .vim with Finder:
+Open "Monaco_Powerline.otf" and click "Install font" to install Powerline's Monaco font which supports fancy characters.
 
-    open .vim
-
-Double-click the "Monaco_Powerline.otf" file to install Powerline's Monaco font which supports fancy characters.
+	open Monaco_Powerline.otf
 
 Open Vim:
 
-	vim # or mvim if you use Mac
+	vim
+
+(if you use MacVim):
+
+	mvim
 
 Install bundles by typing
 
