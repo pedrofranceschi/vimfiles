@@ -1,11 +1,29 @@
 " Must come first because it changes other options.
 set nocompatible
 
-" Enable pathogen
-call pathogen#infect()
-filetype off
-syntax on
-filetype plugin indent on
+
+" Vundle setup
+filetype off " required by Vundle 
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" My bundles from GitHub
+Bundle 'kien/ctrlp.vim'
+Bundle 'b4winckler/vim-objc'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'msanders/snipmate.vim'
+Bundle 'tomtom/tcomment_vim'
+Bundle 'vim-scripts/YankRing.vim'
+Bundle 'mileszs/ack.vim'
+Bundle 'kana/vim-textobj-user'
+Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-unimpaired'
+
+filetype plugin indent on " required by Vundle 
+
+
+" Other configurations...
 
 " Load the matchit plugin.
 runtime macros/matchit.vim
