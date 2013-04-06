@@ -8,6 +8,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " My bundles from GitHub
+Bundle 'sjl/badwolf'
 Bundle 'kien/ctrlp.vim'
 Bundle 'b4winckler/vim-objc'
 Bundle 'Lokaltog/vim-powerline'

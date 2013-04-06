@@ -5,7 +5,7 @@ These are my vimfiles. I created them almost from scratch when I started using V
 
 #### What's included
 
-* [Bad Wolf (colorscheme)](http://stevelosh.com/projects/badwolf/)
+* [Bad Wolf (colorscheme)](https://github.com/sjl/badwolf)
 * [CtrlP](https://github.com/kien/ctrlp.vim)
 * [vim-objc](https://github.com/b4winckler/vim-objc)
 * [powerline](https://github.com/Lokaltog/vim-powerline)
