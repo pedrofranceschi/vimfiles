@@ -17,6 +17,7 @@ These are my vimfiles. I created them almost from scratch when I started using V
 * [vim-textobj-rubyblock](https://github.com/nelstrom/vim-textobj-rubyblock)
 * [fugitive](https://github.com/tpope/vim-fugitive)
 * [unimpaired](https://github.com/tpope/vim-unimpaired)
+* [surround](https://github.com/tpope/vim-surround)
 
 #### Installing (step by step)
 
