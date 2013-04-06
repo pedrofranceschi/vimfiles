@@ -38,9 +38,9 @@ Link vimrc and gvimrc to your home:
     ln -s .vim/vimrc .vimrc
     ln -s .vim/gvimrc .gvimrc
 
-Open "Monaco_Powerline.otf" and click "Install font" to install Powerline's Monaco font which supports fancy characters.
+Open "mensch-Powerline.otf" and click "Install font" to install Powerline's font which supports fancy characters.
 
-	open Monaco_Powerline.otf
+	open mensch-Powerline.otf
 
 Open Vim:
 
