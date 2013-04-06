@@ -108,6 +108,17 @@ nnoremap <leader>f :tabfirst<cr>
 nnoremap <leader>l :tablast<cr>
 nnoremap <leader>m :tabmove
 
+" Fugitive mappings
+" (thanks to Steve Losh's vimrc)
+nnoremap <leader>gd :Gdiff<cr>
+nnoremap <leader>gs :Gstatus<cr>
+nnoremap <leader>gw :Gwrite<cr>
+nnoremap <leader>ga :Gadd<cr>
+nnoremap <leader>gb :Gblame<cr>
+nnoremap <leader>gci :Gcommit<cr>
+nnoremap <leader>gm :Gmove<cr>
+nnoremap <leader>gr :Gremove<cr>
+
 " Edit and load vimrc
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
