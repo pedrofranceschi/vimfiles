@@ -25,11 +25,14 @@ filetype plugin indent on " required by Vundle
 
 " Other configurations...
 
-" Load the matchit plugin.
-runtime macros/matchit.vim
+" Enable syntax highlighting
+syntax on
 
 " Sets the colorscheme for terminal sessions too.
 colorscheme badwolf
+
+" Load the matchit plugin.
+runtime macros/matchit.vim
 
 " Display incomplete commands.
 set showcmd
