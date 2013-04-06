@@ -44,4 +44,12 @@ Open .vim with Finder:
 
 Double-click the "Monaco_Powerline.otf" file to install Powerline's Monaco font which supports fancy characters.
 
+Open Vim:
+
+	vim # or mvim if you use Mac
+
+Install bundles by typing
+
+	:BundleInstall
+
 Restart vim and enjoy! :)
