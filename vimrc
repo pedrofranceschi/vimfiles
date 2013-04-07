@@ -149,3 +149,6 @@ noremap <C-F> :Ack!<space>
 " Remaps textobj-rubyblock's bindings to vim's defaults
 autocmd FileType ruby map aB ar
 autocmd FileType ruby map iB ir
+
+" Sets markdown syntax for *.md files.
+autocmd BufRead,BufNewFile *.md set filetype=markdown
