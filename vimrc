@@ -130,6 +130,9 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 " Toggles hlsearch
 nnoremap <leader>hs :set hlsearch!<cr>
 
+" Maps <C-C> to <esc>
+noremap <C-C> <esc>
+
 " Powerline options
 let g:Powerline_symbols = 'fancy'
 let g:Powerline_cache_enabled = 1
