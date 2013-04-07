@@ -18,6 +18,7 @@ These are my vimfiles. I created them almost from scratch when I started using V
 * [fugitive](https://github.com/tpope/vim-fugitive)
 * [unimpaired](https://github.com/tpope/vim-unimpaired)
 * [surround](https://github.com/tpope/vim-surround)
+* [delimitMate](https://github.com/Raimondi/delimitMate)
 
 #### Installing (step by step)
 

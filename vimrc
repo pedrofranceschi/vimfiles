@@ -21,6 +21,7 @@ Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-surround'
+Bundle 'Raimondi/delimitMate'
 
 filetype plugin indent on " required by Vundle 
 
