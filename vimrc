@@ -22,6 +22,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-surround'
 Bundle 'Raimondi/delimitMate'
+Bundle 'nelstrom/vim-markdown-folding'
 
 filetype plugin indent on " required by Vundle 
 
