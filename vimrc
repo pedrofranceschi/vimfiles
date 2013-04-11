@@ -153,3 +153,9 @@ autocmd FileType ruby map iB ir
 
 " Sets markdown syntax for *.md files.
 autocmd BufRead,BufNewFile *.md set filetype=markdown
+
+" Wrap markdown files.
+autocmd BufRead,BufNewFile *.md set wrap
+
+" Toggles folding with space
+nnoremap <Space> za
