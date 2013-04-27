@@ -154,6 +154,9 @@ autocmd FileType ruby map iB ir
 " Sets markdown syntax for *.md files.
 autocmd BufRead,BufNewFile *.md set filetype=markdown
 
+" Sets javascript syntax for *.json files.
+autocmd BufRead,BufNewFile *.json set filetype=javascript
+
 " Wrap markdown files.
 autocmd BufRead,BufNewFile *.md set wrap
 
