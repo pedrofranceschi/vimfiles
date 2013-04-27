@@ -23,7 +23,6 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-surround'
 Bundle 'Raimondi/delimitMate'
 Bundle 'nelstrom/vim-markdown-folding'
-Bundle 'terryma/vim-multiple-cursors'
 
 filetype plugin indent on " required by Vundle 
 
