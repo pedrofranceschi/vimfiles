@@ -20,6 +20,7 @@ These are my vimfiles. I created them almost from scratch when I started using V
 * [surround](https://github.com/tpope/vim-surround)
 * [delimitMate](https://github.com/Raimondi/delimitMate)
 * [vim-markdown-folding](https://github.com/nelstrom/vim-markdown-folding)
+* [repeat](https://github.com/tpope/vim-repeat)
 
 #### Installing (step by step)
 
