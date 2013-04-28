@@ -166,16 +166,3 @@ set foldlevelstart=20
 
 " Toggles folding with space
 nnoremap <Space> za
-
-" Change vim_multiple_cursors mappings
-let g:multi_cursor_use_default_mapping=0
-let g:multi_cursor_next_key = '<C-s>'
-let g:multi_cursor_prev_key = '<C-a>'
-let g:multi_cursor_skip_key = '<C-q>'
-let g:multi_cursor_quit_key = '<C-z>'
-let g:multi_cursor_exit_from_visual_mode = 0
-let g:multi_cursor_exit_from_insert_mode = 0
-
-" Default highlighting for vim_multiple_cursors
-highlight multiple_cursors_cursor term=reverse cterm=reverse gui=reverse
-highlight link multiple_cursors_visual Visual
