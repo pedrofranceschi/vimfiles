@@ -139,8 +139,10 @@ noremap <C-C> <esc>
 let g:Powerline_symbols = 'fancy'
 let g:Powerline_cache_enabled = 1
 
-" CtrlP - Works not only in ancestor directories of my working directory.
+" CtrlP - works not only in ancestor directories of my working directory.
 let g:ctrlp_working_path_mode = 'a'
+" CtrP - custom ignores
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 " Yankring default mapping conflicts with CtrlP
 let g:yankring_replace_n_pkey = '<C-M>'
