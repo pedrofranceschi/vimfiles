@@ -24,6 +24,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'Raimondi/delimitMate'
 Bundle 'nelstrom/vim-markdown-folding'
 Bundle 'tpope/vim-repeat'
+Bundle 'nono/vim-handlebars'
 
 filetype plugin indent on " required by Vundle 
 
