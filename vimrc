@@ -92,6 +92,8 @@ set tabstop=4
 set shiftwidth=4
 " Specific shiftwidth for ruby files
 autocmd FileType ruby set shiftwidth=2
+" But not for erb files...
+autocmd FileType eruby set shiftwidth=4
 
 " Show the status line all the time
 set laststatus=2
