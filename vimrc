@@ -144,6 +144,10 @@ noremap <C-C> <esc>
 nnoremap L $
 nnoremap H 0
 
+" Scroll without moving cursor with C-J and C-K
+nnoremap <C-J> <C-e>
+nnoremap <C-K> <C-y>
+
 " Powerline options
 let g:Powerline_symbols = 'fancy'
 let g:Powerline_cache_enabled = 1
