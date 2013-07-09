@@ -140,6 +140,10 @@ nnoremap <leader>hs :set hlsearch!<cr>
 " Maps <C-C> to <esc>
 noremap <C-C> <esc>
 
+" Go to start of line with H and to the end with $
+nnoremap L $
+nnoremap H 0
+
 " Powerline options
 let g:Powerline_symbols = 'fancy'
 let g:Powerline_cache_enabled = 1
