@@ -23,6 +23,7 @@ These are my vimfiles. I created them almost from scratch when I started using V
 * [repeat](https://github.com/tpope/vim-repeat)
 * [indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
 * [javascript](https://github.com/pangloss/vim-javascript)
+* [togglelist](https://github.com/milkypostman/vim-togglelist)
 
 #### Installing (step by step)
 
