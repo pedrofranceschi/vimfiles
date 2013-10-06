@@ -24,6 +24,7 @@ These are my vimfiles. I created them almost from scratch when I started using V
 * [indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
 * [javascript](https://github.com/pangloss/vim-javascript)
 * [togglelist](https://github.com/milkypostman/vim-togglelist)
+* [vim-numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)
 
 #### Installing (step by step)
 

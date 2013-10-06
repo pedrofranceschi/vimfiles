@@ -28,6 +28,7 @@ Bundle 'nono/vim-handlebars'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'pangloss/vim-javascript'
 Bundle 'milkypostman/vim-togglelist'
+Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 
 filetype plugin indent on " required by Vundle 
 
@@ -112,11 +113,12 @@ nnoremap <leader>t :tabnew<cr>
 nnoremap <leader>e :tabedit
 nnoremap <leader>c :tabclose<cr>
 nnoremap <leader>o :tabonly<cr>
+nnoremap <leader>f :tabfirst<cr>
+nnoremap <leader>l :tablast<cr>
 nnoremap <leader>n :tabnext<cr>
 nnoremap <leader>p :tabprevious<cr>
 nnoremap <leader>f :tabfirst<cr>
 nnoremap <leader>l :tablast<cr>
-nnoremap <leader>m :tabmove
 
 " Fugitive mappings
 " (thanks to Steve Losh's vimrc)
@@ -187,3 +189,6 @@ set foldlevelstart=20
 
 " Toggles folding with space
 nnoremap <Space> za
+
+" Toggle relative/absolute line counting
+let g:NumberToggleTrigger="<C-l>"
