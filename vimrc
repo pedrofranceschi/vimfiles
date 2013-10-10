@@ -152,6 +152,10 @@ nnoremap H ^
 onoremap L $
 onoremap H ^
 
+" Go to start/end of line while using operators.
+vnoremap L $
+vnoremap H ^
+
 " Scroll without moving cursor with C-J and C-K
 nnoremap <C-J> <C-e>
 nnoremap <C-K> <C-y>
