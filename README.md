@@ -37,14 +37,14 @@ Clone my vimfiles repo:
 
     git clone --recursive https://github.com/pedrofranceschi/vimfiles.git
 
-Rename the repo to .vim in your home:
+Rename the repo to .vim in your home directory:
 
     mv vimfiles ~/.vim
 
-Link vimrc and gvimrc to your home:
+Link vimrc and gvimrc to your home directory:
 
-    ln -s .vim/vimrc .vimrc
-    ln -s .vim/gvimrc .gvimrc
+    ln -s ~/.vim/vimrc ~/.vimrc
+    ln -s ~/.vim/gvimrc ~/.gvimrc
 
 Open "mensch-Powerline.otf" and click "Install font" to install Powerline's font which supports fancy characters.
 
