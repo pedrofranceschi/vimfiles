@@ -37,9 +37,9 @@ Clone my vimfiles repo:
 
     git clone --recursive https://github.com/pedrofranceschi/vimfiles.git
 
-Rename the repo to .vim:
+Rename the repo to .vim in your home:
 
-    mv vimfiles .vim
+    mv vimfiles ~/.vim
 
 Link vimrc and gvimrc to your home:
 
