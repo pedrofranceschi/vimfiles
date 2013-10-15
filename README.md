@@ -25,6 +25,7 @@ These are my vimfiles. I created them almost from scratch when I started using V
 * [javascript](https://github.com/pangloss/vim-javascript)
 * [togglelist](https://github.com/milkypostman/vim-togglelist)
 * [vim-numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)
+* [NERDtree](https://github.com/scrooloose/nerdtree)
 
 #### Installing (step by step)
 

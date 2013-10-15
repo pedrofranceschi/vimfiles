@@ -29,6 +29,7 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'pangloss/vim-javascript'
 Bundle 'milkypostman/vim-togglelist'
 Bundle 'jeffkreeftmeijer/vim-numbertoggle'
+Bundle 'scrooloose/nerdtree'
 
 filetype plugin indent on " required by Vundle 
 
@@ -140,6 +141,9 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " Toggles hlsearch
 nnoremap <leader>hs :set hlsearch!<cr>
+
+" Toggles NERDtree
+noremap <leader>nt :NERDTreeToggle<CR>
 
 " Maps <C-C> to <esc>
 noremap <C-C> <esc>
