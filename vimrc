@@ -145,6 +145,8 @@ nnoremap <leader>hs :set hlsearch!<cr>
 " Toggles NERDtree
 noremap <leader>nt :NERDTreeToggle<CR>
 
+let g:NERDTreeHijackNetrw = 0
+
 " Maps <C-C> to <esc>
 noremap <C-C> <esc>
 
