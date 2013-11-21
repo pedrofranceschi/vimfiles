@@ -30,6 +30,9 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'milkypostman/vim-togglelist'
 Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 Bundle 'scrooloose/nerdtree'
+Bundle 'michalliu/jsruntime.vim'
+Bundle 'michalliu/jsoncodecs.vim'
+Bundle 'michalliu/sourcebeautify.vim'
 
 filetype plugin indent on " required by Vundle 
 
