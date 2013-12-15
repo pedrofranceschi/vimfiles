@@ -175,7 +175,7 @@ let g:Powerline_symbols = 'fancy'
 let g:Powerline_cache_enabled = 1
 
 " CtrlP - works not only in ancestor directories of my working directory.
-let g:ctrlp_working_path_mode = 'a'
+let g:ctrlp_working_path_mode = 'ca'
 " Custom ignores
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|class'
 
