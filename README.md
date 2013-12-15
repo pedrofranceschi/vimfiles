@@ -27,6 +27,7 @@ These are my vimfiles. I created them almost from scratch when I started using V
 * [vim-numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)
 * [NERDtree](https://github.com/scrooloose/nerdtree)
 * [sourcebeautify](https://github.com/michalliu/sourcebeautify.vim)
+* [golang](https://github.com/jnwhiteh/vim-golang)
 
 #### Installing (step by step)
 

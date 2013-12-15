@@ -33,6 +33,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'michalliu/jsruntime.vim'
 Bundle 'michalliu/jsoncodecs.vim'
 Bundle 'michalliu/sourcebeautify.vim'
+Bundle 'jnwhiteh/vim-golang'
 
 filetype plugin indent on " required by Vundle 
 
