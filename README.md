@@ -8,7 +8,7 @@ These are my vimfiles. I created them almost from scratch when I started using V
 * [Bad Wolf (colorscheme)](https://github.com/sjl/badwolf)
 * [CtrlP](https://github.com/kien/ctrlp.vim)
 * [vim-objc](https://github.com/b4winckler/vim-objc)
-* [powerline](https://github.com/Lokaltog/vim-powerline)
+* [airline](https://github.com/bling/vim-airline)
 * [snipmate](https://github.com/msanders/snipmate.vim)
 * [tcomment](https://github.com/tomtom/tcomment_vim)
 * [YankRing](https://github.com/vim-scripts/YankRing.vim)
@@ -51,7 +51,7 @@ Link vimrc and gvimrc to your home directory:
 
 Open "mensch-Powerline.otf" and click "Install font" to install Powerline's font which supports fancy characters.
 
-	open mensch-Powerline.otf
+	open Monaco-Powerline.otf
 
 Open Vim:
 

@@ -10,8 +10,8 @@ call vundle#rc()
 " My bundles from GitHub
 Bundle 'sjl/badwolf'
 Bundle 'kien/ctrlp.vim'
+Bundle 'bling/vim-airline'
 Bundle 'b4winckler/vim-objc'
-Bundle 'Lokaltog/vim-powerline'
 Bundle 'msanders/snipmate.vim'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'vim-scripts/YankRing.vim'
@@ -170,9 +170,10 @@ vnoremap H ^
 nnoremap <C-J> <C-e>
 nnoremap <C-K> <C-y>
 
-" Powerline options
-let g:Powerline_symbols = 'fancy'
-let g:Powerline_cache_enabled = 1
+" Airline options
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'powerlineish'
+let g:airline_section_warning = ''
 
 " CtrlP - works not only in ancestor directories of my working directory.
 let g:ctrlp_working_path_mode = 'a'
