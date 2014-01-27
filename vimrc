@@ -174,6 +174,14 @@ nnoremap <C-K> <C-y>
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'powerlineish'
 let g:airline_section_warning = ''
+let g:airline_inactive_collapse = 0
+let g:airline#extensions#default#section_truncate_width = {
+  \ 'a': 60,
+  \ 'b': 80,
+  \ 'x': 100,
+  \ 'y': 100,
+  \ 'z': 60,
+  \ }
 
 " CtrlP - works not only in ancestor directories of my working directory.
 let g:ctrlp_working_path_mode = 'a'
