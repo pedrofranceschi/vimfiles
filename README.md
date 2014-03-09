@@ -28,6 +28,7 @@ These are my vimfiles. I created them almost from scratch when I started using V
 * [NERDtree](https://github.com/scrooloose/nerdtree)
 * [sourcebeautify](https://github.com/michalliu/sourcebeautify.vim)
 * [golang](https://github.com/jnwhiteh/vim-golang)
+* [jk-jumps](https://github.com/teranex/jk-jumps.vim)
 
 #### Installing (step by step)
 
