@@ -34,6 +34,7 @@ Bundle 'michalliu/jsruntime.vim'
 Bundle 'michalliu/jsoncodecs.vim'
 Bundle 'michalliu/sourcebeautify.vim'
 Bundle 'jnwhiteh/vim-golang'
+Bundle 'teranex/jk-jumps.vim'
 
 filetype plugin indent on " required by Vundle 
 
