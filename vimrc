@@ -147,7 +147,7 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>hs :set hlsearch!<cr>
 
 " Toggles NERDtree
-noremap <leader>nt :NERDTreeToggle<CR>
+noremap <leader>ft :NERDTreeToggle<CR>
 
 let g:NERDTreeHijackNetrw = 0
 
