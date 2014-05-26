@@ -37,6 +37,7 @@ Bundle 'michalliu/jsoncodecs.vim'
 Bundle 'michalliu/sourcebeautify.vim'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'teranex/jk-jumps.vim'
+Bundle 'tpope/vim-dispatch'
 " }}}
 " ##### Basic options  {{{
 " Display incomplete commands.
@@ -172,7 +173,7 @@ nnoremap <leader>ge :Gedit<cr>
 nnoremap <leader>gm :Gmove
 nnoremap <leader>gr :Gread<cr>
 nnoremap <leader>grm :Gremove<cr>
-nnoremap <leader>gp :Git push
+nnoremap <leader>gp :Dispatch! git push
 " }}}
 " ##### NERDTree  {{{
 noremap <leader>ft :NERDTreeToggle<CR>
@@ -208,6 +209,9 @@ noremap <C-F> :Ack!<space>
 " ##### Number toggle  {{{
 let g:NumberToggleTrigger="<C-l>"
 "}}}
+" ##### togglelist {{{
+let g:toggle_list_copen_command="Copen"
+" }}}
 " }}}
 " ##### Ack motions {{{
 " (from Steve Losh's vimrc)
