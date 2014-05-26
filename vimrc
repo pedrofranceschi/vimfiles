@@ -210,7 +210,7 @@ let g:NumberToggleTrigger="<C-l>"
 "}}}
 " }}}
 " ##### Ack motions {{{
-
+" (from Steve Losh's vimrc)
 " Motions to Ack for things.  Works with pretty much everything, including:
 "
 "   w, W, e, E, b, B, t*, f*, i*, a*, and custom text objects
