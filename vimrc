@@ -171,6 +171,10 @@ vnoremap H ^
 nnoremap <C-J> <C-e>
 nnoremap <C-K> <C-y>
 
+" Emacs bindings in command-line mode
+cnoremap <C-A> <home>
+cnoremap <C-E> <end>
+
 " Airline options
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'powerlineish'
