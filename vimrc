@@ -162,7 +162,9 @@ nnoremap <leader>hs :set hlsearch!<cr>
 
 " Maps <C-C> to <esc>
 noremap <C-C> <esc>
-" }}}
+
+" Go full-screen
+nnoremap <leader>fs :set lines=999 columns=9999<cr>
 " }}}
 " ##### Plugin settings  {{{
 " ##### Fugitive  {{{
