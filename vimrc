@@ -200,8 +200,12 @@ let g:ctrlp_working_path_mode = 'a'
 " Custom ignores
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store'
 " }}}
-" ##### Yankring  {{{
+" ##### YankRing  {{{
+" Default replace keystroke conflicts with CtrlP
 let g:yankring_replace_n_pkey = '<C-M>'
+
+" Don't screw up with operator-pending mode.
+let g:yankring_o_keys = ''
 " }}}
 " ##### Ack  {{{
 noremap <C-F> :Ack!<space>
