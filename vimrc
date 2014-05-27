@@ -38,6 +38,7 @@ Bundle 'michalliu/sourcebeautify.vim'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'teranex/jk-jumps.vim'
 Bundle 'tpope/vim-dispatch'
+Bundle 'rstacruz/sparkup'
 " }}}
 " ##### Basic options  {{{
 " Display incomplete commands.
@@ -173,7 +174,7 @@ nnoremap <leader>ge :Gedit<cr>
 nnoremap <leader>gm :Gmove
 nnoremap <leader>gr :Gread<cr>
 nnoremap <leader>grm :Gremove<cr>
-nnoremap <leader>gp :Dispatch! git push
+nnoremap <leader>gp :Git push
 " }}}
 " ##### NERDTree  {{{
 noremap <leader>ft :NERDTreeToggle<CR>

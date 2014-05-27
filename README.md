@@ -30,6 +30,7 @@ These are my vimfiles. I created them almost from scratch when I started using V
 * [golang](https://github.com/jnwhiteh/vim-golang)
 * [jk-jumps](https://github.com/teranex/jk-jumps.vim)
 * [dispatch](https://github.com/tpope/vim-dispatch)
+* [Sparkup](https://github.com/rstacruz/sparkup)
 
 #### Installing (step by step)
 
