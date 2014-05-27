@@ -116,26 +116,29 @@ let mapleader = ","
 nnoremap <leader>t :tabnew<cr>
 nnoremap <leader>e :tabedit
 nnoremap <leader>c :tabclose<cr>
-nnoremap <leader>o :tabonly<cr>
-nnoremap <leader>f :tabfirst<cr>
-nnoremap <leader>l :tablast<cr>
 nnoremap <leader>n :tabnext<cr>
 nnoremap <leader>p :tabprevious<cr>
-nnoremap <leader>f :tabfirst<cr>
-nnoremap <leader>l :tablast<cr>
 " }}}
 " ##### Line movement {{{
 " Go to start of line with H and to the end with $
 noremap H ^
 noremap L $
 
-" Scroll without moving cursor with C-J and C-K
-nnoremap <C-J> <C-e>
-nnoremap <C-K> <C-y>
-
 " Emacs bindings in command-line mode
 cnoremap <C-A> <home>
 cnoremap <C-E> <end>
+" }}}
+" ##### Split windows {{{
+" Move around easily
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" Create windows
+nnoremap <leader>v <C-w>v<C-w>l
+nnoremap <leader>m <C-w>s<C-w>j
+nnoremap <leader>d <C-w>q
 " }}}
 " ##### Folding {{{
 " Toggles folding with space
@@ -212,7 +215,7 @@ let g:yankring_o_keys = ''
 noremap <C-F> :Ack!<space>
 " }}}
 " ##### Number toggle  {{{
-let g:NumberToggleTrigger="<C-l>"
+let g:NumberToggleTrigger="<leader>ll"
 "}}}
 " ##### togglelist {{{
 let g:toggle_list_copen_command="Copen"
