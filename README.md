@@ -11,7 +11,7 @@ These are my vimfiles. I created them almost from scratch when I started using V
 * [airline](https://github.com/bling/vim-airline)
 * [snipmate](https://github.com/msanders/snipmate.vim)
 * [tcomment](https://github.com/tomtom/tcomment_vim)
-* [YankRing](https://github.com/vim-scripts/YankRing.vim)
+* [Yankstack](https://github.com/maxbrunsfeld/vim-yankstack)
 * [ack.vim](https://github.com/mileszs/ack.vim)
 * [textobj-user](https://github.com/kana/vim-textobj-user)
 * [textobj-rubyblock](https://github.com/nelstrom/vim-textobj-rubyblock)

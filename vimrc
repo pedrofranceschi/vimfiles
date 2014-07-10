@@ -16,7 +16,7 @@ Bundle 'bling/vim-airline'
 Bundle 'b4winckler/vim-objc'
 Bundle 'msanders/snipmate.vim'
 Bundle 'tomtom/tcomment_vim'
-Bundle 'vim-scripts/YankRing.vim'
+Bundle 'maxbrunsfeld/vim-yankstack'
 Bundle 'mileszs/ack.vim'
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
@@ -211,12 +211,13 @@ let g:ctrlp_working_path_mode = 'a'
 " Custom ignores
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store'
 " }}}
-" ##### YankRing  {{{
-" Default replace keystroke conflicts with CtrlP
-let g:yankring_replace_n_pkey = '<C-M>'
+" ##### Yankstack  {{{
+" Don't use default mappings
+let g:yankstack_map_keys = 0
 
-" Don't screw up with operator-pending mode.
-let g:yankring_o_keys = ''
+" Set bindings
+nmap <C-M> <Plug>yankstack_substitute_older_paste
+nmap <C-N> <Plug>yankstack_substitute_newer_paste
 " }}}
 " ##### Ack  {{{
 noremap <C-F> :Ack!<space>
