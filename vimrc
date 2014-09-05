@@ -161,6 +161,9 @@ nnoremap zf mzzMzvzz
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
+" Wrap current paragraph
+noremap <leader>w gqap
+
 " Toggles hlsearch
 nnoremap <leader>hs :set hlsearch!<cr>
 
