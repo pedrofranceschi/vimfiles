@@ -39,6 +39,7 @@ Bundle 'jnwhiteh/vim-golang'
 Bundle 'teranex/jk-jumps.vim'
 Bundle 'tpope/vim-dispatch'
 Bundle 'rstacruz/sparkup'
+Bundle 'haya14busa/incsearch.vim'
 " }}}
 " ##### Basic options  {{{
 " Display incomplete commands.
@@ -155,6 +156,11 @@ nnoremap zC zM
 nnoremap zc zc
 " Close all folds except the current one
 nnoremap zf mzzMzvzz
+" }}}
+" ##### Search {{{
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
 " }}}
 " ##### Misc {{{
 " Edit and load vimrc
