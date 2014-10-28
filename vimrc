@@ -95,9 +95,9 @@ set tabstop=4
 set shiftwidth=4
 
 " Files open expanded
-set foldlevelstart=20
+set foldlevelstart=50
 " Use decent folding
-set foldmethod=marker
+set foldmethod=indent
 
 " Show the status line all the time
 set laststatus=2
@@ -301,5 +301,6 @@ autocmd BufRead,BufNewFile *.ejs set filetype=html
 " ##### Vim {{{
 " Make vimrcs open folded
 autocmd FileType vim set foldlevel=0
+autocmd FileType vim set foldmethod=marker
 " }}}
 " }}}
