@@ -113,6 +113,7 @@ set diffopt+=vertical
 syntax on
 " Sets the colorscheme for terminal sessions too.
 colorscheme molokai
+autocmd BufEnter * colorscheme molokai
 
 " Leader = ,
 let mapleader = ","
@@ -291,6 +292,8 @@ autocmd BufRead,BufNewFile *.md set filetype=markdown
 
 " Wrap markdown files.
 autocmd BufRead,BufNewFile *.md set wrap
+
+autocmd BufEnter *.md colorscheme badwolf
 " }}}
 " ##### JavaScript  {{{
 " Sets javascript syntax for *.json files.
