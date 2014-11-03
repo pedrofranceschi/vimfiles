@@ -40,6 +40,7 @@ Bundle 'teranex/jk-jumps.vim'
 Bundle 'tpope/vim-dispatch'
 Bundle 'rstacruz/sparkup'
 Bundle 'haya14busa/incsearch.vim'
+Bundle 'tomasr/molokai'
 " }}}
 " ##### Basic options  {{{
 " Display incomplete commands.
@@ -111,7 +112,7 @@ set diffopt+=vertical
 " Enable syntax highlighting
 syntax on
 " Sets the colorscheme for terminal sessions too.
-colorscheme badwolf
+colorscheme molokai
 
 " Leader = ,
 let mapleader = ","
