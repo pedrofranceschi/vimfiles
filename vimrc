@@ -307,4 +307,8 @@ autocmd BufRead,BufNewFile *.ejs set filetype=html
 autocmd FileType vim set foldlevel=0
 autocmd FileType vim set foldmethod=marker
 " }}}
+" ##### XML {{{
+" Automatically format XML files
+nnoremap <leader>xb :%s,>[ <tab>]*<,>\r<,g<cr> gg=G
+" }}}
 " }}}
