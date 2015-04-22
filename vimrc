@@ -115,8 +115,8 @@ set diffopt+=vertical
 " Enable syntax highlighting
 syntax on
 " Sets the colorscheme for terminal sessions too.
-colorscheme molokai
-autocmd BufEnter * colorscheme molokai
+colorscheme badwolf
+autocmd BufEnter * colorscheme badwolf
 
 " Leader = ,
 let mapleader = ","
