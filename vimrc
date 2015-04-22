@@ -41,6 +41,7 @@ Bundle 'tpope/vim-dispatch'
 Bundle 'rstacruz/sparkup'
 Bundle 'haya14busa/incsearch.vim'
 Bundle 'tomasr/molokai'
+Bundle 'rodjek/vim-puppet'
 " }}}
 " ##### Basic options  {{{
 " Display incomplete commands.
@@ -285,6 +286,15 @@ autocmd FileType eruby set shiftwidth=4
 " Remaps textobj-rubyblock's bindings to vim's defaults
 autocmd FileType ruby map aB ar
 autocmd FileType ruby map iB ir
+" }}}
+" ##### Puppet  {{{
+" Specific shiftwidth for puppet files
+autocmd BufRead,BufNewFile *.pp set filetype=puppet
+autocmd BufRead,BufNewFile Puppetfile set filetype=ruby
+
+" And custom tab sizes too
+autocmd FileType puppet set shiftwidth=2
+autocmd FileType puppet set tabstop=2
 " }}}
 " ##### Markdown  {{{
 " Sets markdown syntax for *.md files.

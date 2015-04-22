@@ -32,6 +32,7 @@ These are my vimfiles. I created them almost from scratch when I started using V
 * [dispatch](https://github.com/tpope/vim-dispatch)
 * [Sparkup](https://github.com/rstacruz/sparkup)
 * [incsearch](https://github.com/haya14busa/incsearch.vim)
+* [puppet](https://github.com/rodjek/vim-puppet)
 
 #### Installing (step by step)
 
