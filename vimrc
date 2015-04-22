@@ -41,6 +41,9 @@ Bundle 'tpope/vim-dispatch'
 Bundle 'rstacruz/sparkup'
 Bundle 'haya14busa/incsearch.vim'
 Bundle 'tomasr/molokai'
+Bundle 'rodjek/vim-puppet'
+Bundle 'gkz/vim-ls'
+Bundle 'kchmck/vim-coffee-script'
 " }}}
 " ##### Basic options  {{{
 " Display incomplete commands.
@@ -112,8 +115,8 @@ set diffopt+=vertical
 " Enable syntax highlighting
 syntax on
 " Sets the colorscheme for terminal sessions too.
-colorscheme molokai
-autocmd BufEnter * colorscheme molokai
+colorscheme badwolf
+autocmd BufEnter * colorscheme badwolf
 
 " Leader = ,
 let mapleader = ","
@@ -279,8 +282,10 @@ endfunction
 " ##### Ruby  {{{
 " Specific shiftwidth for ruby files
 autocmd FileType ruby set shiftwidth=2
+autocmd FileType ruby set tabstop=2
 " But not for erb files...
 autocmd FileType eruby set shiftwidth=4
+autocmd FileType eruby set tabstop=4
 "
 " Remaps textobj-rubyblock's bindings to vim's defaults
 autocmd FileType ruby map aB ar
@@ -310,5 +315,16 @@ autocmd FileType vim set foldmethod=marker
 " ##### XML {{{
 " Automatically format XML files
 nnoremap <leader>xb :%s,>[ <tab>]*<,>\r<,g<cr> gg=G
+" }}}
+" ##### Puppet {{{
+autocmd BufRead,BufNewFile *.pp set filetype=puppet
+autocmd BufRead,BufNewFile Puppetfile set filetype=ruby
+autocmd FileType puppet set shiftwidth=2
+autocmd FileType puppet set tabstop=2
+" }}}
+" ##### LiveScript {{{
+autocmd BufRead,BufNewFile *.ls set filetype=ls
+autocmd FileType ls set shiftwidth=2
+autocmd FileType ls set tabstop=2
 " }}}
 " }}}
