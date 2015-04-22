@@ -42,6 +42,8 @@ Bundle 'rstacruz/sparkup'
 Bundle 'haya14busa/incsearch.vim'
 Bundle 'tomasr/molokai'
 Bundle 'rodjek/vim-puppet'
+Bundle 'gkz/vim-ls'
+Bundle 'kchmck/vim-coffee-script'
 " }}}
 " ##### Basic options  {{{
 " Display incomplete commands.
@@ -317,5 +319,10 @@ autocmd BufRead,BufNewFile *.pp set filetype=puppet
 autocmd BufRead,BufNewFile Puppetfile set filetype=ruby
 autocmd FileType puppet set shiftwidth=2
 autocmd FileType puppet set tabstop=2
+" }}}
+" ##### LiveScript {{{
+autocmd BufRead,BufNewFile *.ls set filetype=ls
+autocmd FileType ls set shiftwidth=2
+autocmd FileType ls set tabstop=2
 " }}}
 " }}}
