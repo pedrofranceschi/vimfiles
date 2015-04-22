@@ -282,8 +282,10 @@ endfunction
 " ##### Ruby  {{{
 " Specific shiftwidth for ruby files
 autocmd FileType ruby set shiftwidth=2
+autocmd FileType ruby set tabstop=2
 " But not for erb files...
 autocmd FileType eruby set shiftwidth=4
+autocmd FileType eruby set tabstop=4
 "
 " Remaps textobj-rubyblock's bindings to vim's defaults
 autocmd FileType ruby map aB ar
