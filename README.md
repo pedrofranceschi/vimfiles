@@ -6,6 +6,7 @@ These are my vimfiles. I created them almost from scratch when I started using V
 #### What's included
 
 * [Bad Wolf (colorscheme)](https://github.com/sjl/badwolf)
+* [Molokai (colorscheme, default)](https://github.com/tomasr/molokai)
 * [CtrlP](https://github.com/kien/ctrlp.vim)
 * [vim-objc](https://github.com/b4winckler/vim-objc)
 * [airline](https://github.com/bling/vim-airline)
@@ -31,6 +32,8 @@ These are my vimfiles. I created them almost from scratch when I started using V
 * [jk-jumps](https://github.com/teranex/jk-jumps.vim)
 * [dispatch](https://github.com/tpope/vim-dispatch)
 * [Sparkup](https://github.com/rstacruz/sparkup)
+* [incsearch](https://github.com/haya14busa/incsearch.vim)
+* [vim-puppet](https://github.com/rodjek/vim-puppet)
 
 #### Installing (step by step)
 
