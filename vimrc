@@ -41,6 +41,7 @@ Bundle 'tpope/vim-dispatch'
 Bundle 'rstacruz/sparkup'
 Bundle 'haya14busa/incsearch.vim'
 Bundle 'tomasr/molokai'
+Bundle 'rodjek/vim-puppet'
 " }}}
 " ##### Basic options  {{{
 " Display incomplete commands.
@@ -310,5 +311,11 @@ autocmd FileType vim set foldmethod=marker
 " ##### XML {{{
 " Automatically format XML files
 nnoremap <leader>xb :%s,>[ <tab>]*<,>\r<,g<cr> gg=G
+" }}}
+" ##### Puppet {{{
+autocmd BufRead,BufNewFile *.pp set filetype=puppet
+autocmd BufRead,BufNewFile Puppetfile set filetype=ruby
+autocmd FileType puppet set shiftwidth=2
+autocmd FileType puppet set tabstop=2
 " }}}
 " }}}
