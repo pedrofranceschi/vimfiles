@@ -34,6 +34,8 @@ These are my vimfiles. I created them almost from scratch when I started using V
 * [Sparkup](https://github.com/rstacruz/sparkup)
 * [incsearch](https://github.com/haya14busa/incsearch.vim)
 * [vim-puppet](https://github.com/rodjek/vim-puppet)
+* [vim-ls](https://github.com/gkz/vim-ls)
+* [vim-coffee-script](https://github.com/kchmck/vim-coffee-script)
 
 #### Installing (step by step)
 
