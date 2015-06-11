@@ -47,6 +47,7 @@ Clone my vimfiles repo:
 
 Rename the repo to .vim in your home directory:
 
+    cd vimfiles
     mv vimfiles ~/.vim
 
 Link vimrc and gvimrc to your home directory:
