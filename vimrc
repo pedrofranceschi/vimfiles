@@ -3,45 +3,50 @@
 " Source: http://github.com/pedrofranceschi/vimfiles
 
 " ##### Vundle setup  {{{
-set nocompatible
-filetype off " required by Vundle 
-filetype plugin indent on " required by Vundle "
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set nocompatible              " be iMproved, required
+filetype off                  " required
+" Set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 " "}}}
 " ##### Bundles  {{{
-Bundle 'sjl/badwolf'
-Bundle 'kien/ctrlp.vim'
-Bundle 'bling/vim-airline'
-Bundle 'b4winckler/vim-objc'
-Bundle 'msanders/snipmate.vim'
-Bundle 'tomtom/tcomment_vim'
-Bundle 'maxbrunsfeld/vim-yankstack'
-Bundle 'mileszs/ack.vim'
-Bundle 'kana/vim-textobj-user'
-Bundle 'nelstrom/vim-textobj-rubyblock'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'tpope/vim-surround'
-Bundle 'Raimondi/delimitMate'
-Bundle 'nelstrom/vim-markdown-folding'
-Bundle 'tpope/vim-repeat'
-Bundle 'nono/vim-handlebars'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'pangloss/vim-javascript'
-Bundle 'milkypostman/vim-togglelist'
-Bundle 'jeffkreeftmeijer/vim-numbertoggle'
-Bundle 'scrooloose/nerdtree'
-Bundle 'michalliu/jsruntime.vim'
-Bundle 'michalliu/jsoncodecs.vim'
-Bundle 'michalliu/sourcebeautify.vim'
-Bundle 'jnwhiteh/vim-golang'
-Bundle 'teranex/jk-jumps.vim'
-Bundle 'tpope/vim-dispatch'
-Bundle 'rstacruz/sparkup'
-Bundle 'haya14busa/incsearch.vim'
-Bundle 'tomasr/molokai'
-Bundle 'rodjek/vim-puppet'
+Plugin 'sjl/badwolf'
+Plugin 'kien/ctrlp.vim'
+Plugin 'bling/vim-airline'
+Plugin 'b4winckler/vim-objc'
+Plugin 'msanders/snipmate.vim'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'maxbrunsfeld/vim-yankstack'
+Plugin 'mileszs/ack.vim'
+Plugin 'kana/vim-textobj-user'
+Plugin 'nelstrom/vim-textobj-rubyblock'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'tpope/vim-surround'
+Plugin 'Raimondi/delimitMate'
+Plugin 'nelstrom/vim-markdown-folding'
+Plugin 'tpope/vim-repeat'
+Plugin 'nono/vim-handlebars'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'pangloss/vim-javascript'
+Plugin 'milkypostman/vim-togglelist'
+Plugin 'jeffkreeftmeijer/vim-numbertoggle'
+Plugin 'scrooloose/nerdtree'
+Plugin 'michalliu/jsruntime.vim'
+Plugin 'michalliu/jsoncodecs.vim'
+Plugin 'michalliu/sourcebeautify.vim'
+Plugin 'jnwhiteh/vim-golang'
+Plugin 'teranex/jk-jumps.vim'
+Plugin 'tpope/vim-dispatch'
+Plugin 'rstacruz/sparkup'
+Plugin 'haya14busa/incsearch.vim'
+Plugin 'tomasr/molokai'
+Plugin 'rodjek/vim-puppet'
+Plugin 'elixir-lang/vim-elixir'
+" }}}
+" ##### Vundle post-setup {{{
+call vundle#end()            " required
+filetype plugin indent on    " required
 " }}}
 " ##### Basic options  {{{
 " Display incomplete commands.
