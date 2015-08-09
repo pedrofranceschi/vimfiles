@@ -328,4 +328,8 @@ autocmd FileType vim set foldmethod=marker
 " Automatically format XML files
 nnoremap <leader>xb :%s,>[ <tab>]*<,>\r<,g<cr> gg=G
 " }}}
+" ##### SQL {{{
+" SQL to CSV
+nnoremap <leader>csv ggV/^+-<cr>dGV?^+-<cr>dgg:g/^+-/d<cr>:%s/^<bar> \<bar> <bar>$//g<cr>:%s/ *<bar> */,/g<cr>
+" }}}
 " }}}
