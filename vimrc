@@ -297,9 +297,6 @@ let g:toggle_list_copen_command="Copen"
 nnoremap <silent> <leader>a :set opfunc=<SID>AckMotion<CR>g@
 xnoremap <silent> <leader>a :<C-U>call <SID>AckMotion(visualmode())<CR>
 
-nnoremap <bs> :Ack! '\b<c-r><c-w>\b'<cr>
-xnoremap <silent> <bs> :<C-U>call <SID>AckMotion(visualmode())<CR>
-
 function! s:CopyMotionForType(type)
     if a:type ==# 'v'
         silent execute "normal! `<" . a:type . "`>y"
