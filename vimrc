@@ -10,39 +10,69 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " "}}}
 " ##### Bundles  {{{
+" Theme of this vimfiles
 Plugin 'sjl/badwolf'
+" Fuzzy search file swithing with Ctrl+P
 Plugin 'kien/ctrlp.vim'
+" Useful statusbar in your vim
 Plugin 'bling/vim-airline'
 Plugin 'b4winckler/vim-objc'
+" Enables the usage of snippets in vim. Use tab to complete.
 Plugin 'msanders/snipmate.vim'
+" Comment toggling: use `gc` to toggle comments in visual mode
 Plugin 'tomtom/tcomment_vim'
+" Navigate the yank register stack using Ctrl+M (useful when pasting code)
 Plugin 'maxbrunsfeld/vim-yankstack'
+" Keybidings to use Ack in Vim. Use `<leader>a` in visual mode to search a
+" text in the tree.
 Plugin 'mileszs/ack.vim'
+" Makes vim understand ruby blocks
 Plugin 'kana/vim-textobj-user'
 Plugin 'nelstrom/vim-textobj-rubyblock'
+" Git bindings for VIM
 Plugin 'tpope/vim-fugitive'
+" Some useful keybindings
 Plugin 'tpope/vim-unimpaired'
+" Surround utils for vim
 Plugin 'tpope/vim-surround'
+" Automatic closing of brackets
 Plugin 'Raimondi/delimitMate'
+" Makes vim understand markdown folding
 Plugin 'nelstrom/vim-markdown-folding'
+" Makes the repeat command `.` work in more cases
 Plugin 'tpope/vim-repeat'
+" Vim support for Js handlebars
 Plugin 'nono/vim-handlebars'
 Plugin 'nathanaelkane/vim-indent-guides'
+" Javascript support for vim
 Plugin 'pangloss/vim-javascript'
 Plugin 'milkypostman/vim-togglelist'
+" Relative line number
 Plugin 'jeffkreeftmeijer/vim-numbertoggle'
+" File explorer for VIM. <leader>ft to activate
 Plugin 'scrooloose/nerdtree'
 Plugin 'michalliu/jsruntime.vim'
 Plugin 'michalliu/jsoncodecs.vim'
+" Source beautify: <leader>sb to activate
 Plugin 'michalliu/sourcebeautify.vim'
+" Golang support for vim
 Plugin 'jnwhiteh/vim-golang'
+" Make jk behave as jumps in Vim
 Plugin 'teranex/jk-jumps.vim'
 Plugin 'tpope/vim-dispatch'
+" Expand html easily: div > 3*li then Ctrl+e in an html file
 Plugin 'rstacruz/sparkup'
 Plugin 'haya14busa/incsearch.vim'
+" Use the Molokay font in Vim
 Plugin 'tomasr/molokai'
+" Puppet support for Vim
 Plugin 'rodjek/vim-puppet'
+" Elixir support for Vim
 Plugin 'elixir-lang/vim-elixir'
+" Autocomplete as you type, <enter> inserts, <C-e> to closes popup
+Plugin 'vim-scripts/AutoComplPop'
+" Ruby support for Vim
+Plugin 'vim-ruby/vim-ruby'
 " }}}
 " ##### Vundle post-setup {{{
 call vundle#end()            " required
@@ -192,6 +222,7 @@ noremap <C-C> <esc>
 
 " Go full-screen
 nnoremap <leader>fs :set lines=999 columns=9999<cr>
+
 " }}}
 " }}}
 " ##### Plugin settings  {{{
