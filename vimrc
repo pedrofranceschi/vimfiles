@@ -71,6 +71,8 @@ Plugin 'rodjek/vim-puppet'
 Plugin 'elixir-lang/vim-elixir'
 " Autocomplete as you type, <enter> inserts, <C-e> to closes popup
 Plugin 'vim-scripts/AutoComplPop'
+" Ruby support for Vim
+Plugin 'vim-ruby/vim-ruby'
 " }}}
 " ##### Vundle post-setup {{{
 call vundle#end()            " required
