@@ -69,8 +69,6 @@ Plugin 'tomasr/molokai'
 Plugin 'rodjek/vim-puppet'
 " Elixir support for Vim
 Plugin 'elixir-lang/vim-elixir'
-" Autocomplete as you type, <enter> inserts, <C-e> to closes popup
-Plugin 'vim-scripts/AutoComplPop'
 " Ruby support for Vim
 Plugin 'vim-ruby/vim-ruby'
 " How do I: type in query and press Ctrl+H
