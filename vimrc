@@ -28,7 +28,7 @@ Plugin 'maxbrunsfeld/vim-yankstack'
 Plugin 'mileszs/ack.vim'
 " Makes vim understand ruby blocks
 Plugin 'kana/vim-textobj-user'
-Plugin 'nelstrom/vim-textobj-rubyblock'
+Plugin 'rhysd/vim-textobj-ruby'
 " Git bindings for VIM
 Plugin 'tpope/vim-fugitive'
 " Some useful keybindings
