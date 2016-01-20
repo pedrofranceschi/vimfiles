@@ -75,7 +75,6 @@ Install howdoi
 
 	pip install howdoi
 
-
 Install ack
 
 	brew install ack
