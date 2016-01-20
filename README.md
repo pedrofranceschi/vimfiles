@@ -14,7 +14,7 @@ These are my vimfiles. I created them almost from scratch when I started using V
 * [Yankstack](https://github.com/maxbrunsfeld/vim-yankstack)
 * [ack.vim](https://github.com/mileszs/ack.vim)
 * [textobj-user](https://github.com/kana/vim-textobj-user)
-* [textobj-rubyblock](https://github.com/nelstrom/vim-textobj-rubyblock)
+* [vim-textobj-ruby](https://github.com/rhysd/vim-textobj-ruby)
 * [fugitive](https://github.com/tpope/vim-fugitive)
 * [unimpaired](https://github.com/tpope/vim-unimpaired)
 * [surround](https://github.com/tpope/vim-surround)
@@ -33,6 +33,7 @@ These are my vimfiles. I created them almost from scratch when I started using V
 * [Sparkup](https://github.com/rstacruz/sparkup)
 * [incsearch](https://github.com/haya14busa/incsearch.vim)
 * [puppet](https://github.com/rodjek/vim-puppet)
+* [vim-howdoi](https://github.com/laurentgoudet/vim-howdoi)
 
 #### Installing (step by step)
 
@@ -69,5 +70,13 @@ Open Vim:
 Install bundles by typing
 
 	:PluginInstall
+
+Install howdoi
+
+	pip install howdoi
+
+Install ack
+
+	brew install ack
 
 Restart vim and enjoy! :)
