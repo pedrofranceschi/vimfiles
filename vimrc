@@ -75,6 +75,13 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'laurentgoudet/vim-howdoi'
 " Autocomplete as you type, <enter> inserts, <C-e> to closes popup
 Plugin 'vim-scripts/AutoComplPop'
+
+" The following loads a local bundles file, in case
+" you wish to install local plugins
+if filereadable(glob("~/.vimrc.bundles.local"))
+    source ~/.vimrc.bundles.local
+endif
+
 " }}}
 " ##### Vundle post-setup {{{
 call vundle#end()            " required
@@ -375,4 +382,10 @@ nnoremap <leader>csv ggV/^+-<cr>dGV?^+-<cr>dgg:g/^+-/d<cr>:%s/^<bar> \<bar> <bar
 " Sets YAML syntax for *.lookml files.
 autocmd BufRead,BufNewFile *.lookml set filetype=yaml
 " }}}
+" }}}
+" ##### Local Vim Configurations {{{
+" Sets YAML syntax for *.lookml files.
+if filereadable(glob("~/.vimrc.local"))
+    source ~/.vimrc.local
+endif
 " }}}
