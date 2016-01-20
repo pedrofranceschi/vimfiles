@@ -73,6 +73,8 @@ Plugin 'elixir-lang/vim-elixir'
 Plugin 'vim-ruby/vim-ruby'
 " How do I: type in query and press Ctrl+H
 Plugin 'laurentgoudet/vim-howdoi'
+" Autocomplete as you type, <enter> inserts, <C-e> to closes popup
+Plugin 'vim-scripts/AutoComplPop'
 " }}}
 " ##### Vundle post-setup {{{
 call vundle#end()            " required
