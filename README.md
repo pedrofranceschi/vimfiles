@@ -33,7 +33,7 @@ These are my vimfiles. I created them almost from scratch when I started using V
 * [Sparkup](https://github.com/rstacruz/sparkup)
 * [incsearch](https://github.com/haya14busa/incsearch.vim)
 * [puppet](https://github.com/rodjek/vim-puppet)
-* [vim-howdoi](https://github.com/laurentgoudet/vim-howdoi)
+* [vim-howdoi](https://github.com/isovector/vim-howdoi)
 * [AutoComplPop](https://github.com/vim-scripts/AutoComplPop)
 
 #### Installing (step by step)
