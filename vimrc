@@ -72,7 +72,7 @@ Plugin 'elixir-lang/vim-elixir'
 " Ruby support for Vim
 Plugin 'vim-ruby/vim-ruby'
 " How do I: type in query and press Ctrl+H
-Plugin 'laurentgoudet/vim-howdoi'
+Plugin 'isovector/vim-howdoi'
 
 " The following loads a local bundles file, in case
 " you wish to install local plugins
