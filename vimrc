@@ -333,14 +333,14 @@ endfunction
 " ##### Filetype-specific  {{{
 " ##### Ruby  {{{
 " Specific shiftwidth for ruby files
-autocmd FileType ruby setlocal shiftwidth=2
-autocmd FileType ruby setlocal tabstop=2
+autocmd FileType ruby set shiftwidth=2
+autocmd FileType ruby set tabstop=2
 " Convert tabs to spaces in Ruby files
-autocmd FileType ruby setlocal expandtab
+autocmd FileType ruby set expandtab
 
 " But not for erb files...
-autocmd FileType eruby setlocal shiftwidth=4
-autocmd FileType eruby setlocal tabstop=4
+autocmd FileType eruby set shiftwidth=4
+autocmd FileType eruby set tabstop=4
 "
 " Remaps textobj-rubyblock's bindings to vim's defaults
 autocmd FileType ruby map aB ar
@@ -348,33 +348,33 @@ autocmd FileType ruby map iB ir
 " }}}
 " ##### Puppet  {{{
 " Specific shiftwidth for puppet files
-autocmd BufRead,BufNewFile *.pp setlocal filetype=puppet
-autocmd BufRead,BufNewFile Puppetfile setlocal filetype=ruby
+autocmd BufRead,BufNewFile *.pp set filetype=puppet
+autocmd BufRead,BufNewFile Puppetfile set filetype=ruby
 
 " And custom tab sizes too
-autocmd FileType puppet setlocal shiftwidth=2
-autocmd FileType puppet setlocal tabstop=2
+autocmd FileType puppet set shiftwidth=2
+autocmd FileType puppet set tabstop=2
 " }}}
 " ##### Markdown  {{{
 " Sets markdown syntax for *.md files.
-autocmd BufRead,BufNewFile *.md setlocal filetype=markdown
+autocmd BufRead,BufNewFile *.md set filetype=markdown
 
 " Wrap markdown files.
-autocmd BufRead,BufNewFile *.md setlocal wrap
+autocmd BufRead,BufNewFile *.md set wrap
 
 autocmd BufEnter *.md colorscheme badwolf
 " }}}
 " ##### JavaScript  {{{
 " Sets javascript syntax for *.json files.
-autocmd BufRead,BufNewFile *.json setlocal filetype=javascript
+autocmd BufRead,BufNewFile *.json set filetype=javascript
 
 " Sets html syntax for *.ejs files.
-autocmd BufRead,BufNewFile *.ejs setlocal filetype=html
+autocmd BufRead,BufNewFile *.ejs set filetype=html
 " }}}
 " ##### Vim {{{
 " Make vimrcs open folded
-autocmd FileType vim setlocal foldlevel=0
-autocmd FileType vim setlocal foldmethod=marker
+autocmd FileType vim set foldlevel=0
+autocmd FileType vim set foldmethod=marker
 " }}}
 " ##### XML {{{
 " Automatically format XML files
@@ -386,7 +386,7 @@ nnoremap <leader>csv ggV/^+-<cr>dGV?^+-<cr>dgg:g/^+-/d<cr>:%s/^<bar> \<bar> <bar
 " }}}
 " ##### LookML {{{
 " Sets YAML syntax for *.lookml files.
-autocmd BufRead,BufNewFile *.lookml setlocal filetype=yaml
+autocmd BufRead,BufNewFile *.lookml set filetype=yaml
 " }}}
 " }}}
 " ##### Local Vim Configurations {{{
