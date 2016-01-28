@@ -139,9 +139,9 @@ set nowritebackup
 set directory=$HOME/.vim/tmp//,.
 
 " Global tab width.
-set tabstop=4
+autocmd FileType * set tabstop=4
 " And again, related.
-set shiftwidth=4
+autocmd FileType * set shiftwidth=4
 
 " Files open expanded
 set foldlevelstart=50
