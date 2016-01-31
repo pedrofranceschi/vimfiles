@@ -76,8 +76,6 @@ Plugin 'rodjek/vim-puppet'
 Plugin 'elixir-lang/vim-elixir'
 " Ruby support for Vim
 Plugin 'vim-ruby/vim-ruby'
-" How do I: type in query and press <leader>h
-Plugin 'isovector/vim-howdoi'
 
 " The following loads a local bundles file, in case
 " you wish to install local plugins
@@ -292,9 +290,6 @@ let g:NumberToggleTrigger="<leader>ll"
 "}}}
 " ##### togglelist {{{
 let g:toggle_list_copen_command="Copen"
-" }}}
-" ##### vim-howdoi {{{
-let g:howdoi_map="<leader>how"
 " }}}
 " }}}
 " ##### Ack motions {{{
