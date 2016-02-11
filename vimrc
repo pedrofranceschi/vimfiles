@@ -180,8 +180,12 @@ nnoremap <leader>p :tabprevious<cr>
 " }}}
 " ##### Line movement {{{
 " Go to start of line with H and to the end with $
-noremap H ^
-noremap L $
+function! s:MapLineMovements()
+    map H ^
+    map L $
+endfunction
+
+call s:MapLineMovements()
 
 " Emacs bindings in command-line mode
 cnoremap <C-A> <home>
@@ -279,6 +283,9 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store'
 " Set bindings
 let g:yankring_replace_n_pkey = '<c-m>'
 let g:yankring_replace_n_nkey = '<c-n>'
+function! YRRunAfterMaps()
+    call s:MapLineMovements()
+endfunction
 " }}}
 " ##### Ack  {{{
 noremap <C-F> :Ack!<space>
