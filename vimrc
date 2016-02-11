@@ -16,6 +16,7 @@ Plugin 'sjl/badwolf'
 Plugin 'kien/ctrlp.vim'
 " Useful statusbar in your vim
 Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'b4winckler/vim-objc'
 " Snipmate dependencies
 Plugin 'MarcWeber/vim-addon-mw-utils'
