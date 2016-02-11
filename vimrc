@@ -28,7 +28,7 @@ Plugin 'honza/vim-snippets'
 " Comment toggling: use `gc` to toggle comments in visual mode
 Plugin 'tomtom/tcomment_vim'
 " Navigate the yank register stack using Ctrl+M (useful when pasting code)
-Plugin 'maxbrunsfeld/vim-yankstack'
+Plugin 'vim-scripts/YankRing.vim'
 " Keybidings to use Ack in Vim. Use `<leader>a` in visual mode to search a
 " text in the tree.
 Plugin 'mileszs/ack.vim'
@@ -275,13 +275,10 @@ let g:ctrlp_working_path_mode = 'a'
 " Custom ignores
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store'
 " }}}
-" ##### Yankstack  {{{
-" Don't use default mappings
-let g:yankstack_map_keys = 0
-
+" ##### Yankring  {{{
 " Set bindings
-nmap <C-M> <Plug>yankstack_substitute_older_paste
-nmap <C-N> <Plug>yankstack_substitute_newer_paste
+let g:yankring_replace_n_pkey = '<c-m>'
+let g:yankring_replace_n_nkey = '<c-n>'
 " }}}
 " ##### Ack  {{{
 noremap <C-F> :Ack!<space>
