@@ -43,6 +43,9 @@ Plugin 'haya14busa/incsearch.vim'
 Plugin 'tomasr/molokai'
 Plugin 'rodjek/vim-puppet'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'embear/vim-localvimrc'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'editorconfig/editorconfig-vim'
 " }}}
 " ##### Vundle post-setup {{{
 call vundle#end()            " required
@@ -250,6 +253,9 @@ let g:NumberToggleTrigger="<leader>ll"
 "}}}
 " ##### togglelist {{{
 let g:toggle_list_copen_command="Copen"
+" }}}
+" ##### localvimrc {{{
+let g:localvimrc_persistent=1
 " }}}
 " }}}
 " ##### Ack motions {{{
