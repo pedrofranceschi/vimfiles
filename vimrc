@@ -11,7 +11,7 @@ call vundle#begin()
 " "}}}
 " ##### Bundles  {{{
 Plugin 'sjl/badwolf'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'bling/vim-airline'
 Plugin 'b4winckler/vim-objc'
 Plugin 'msanders/snipmate.vim'
