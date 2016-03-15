@@ -28,7 +28,7 @@ Plugin 'honza/vim-snippets'
 " Comment toggling: use `gc` to toggle comments in visual mode
 Plugin 'tomtom/tcomment_vim'
 " Navigate the yank register stack using Ctrl+M (useful when pasting code)
-Plugin 'vim-scripts/YankRing.vim'
+Plugin 'svermeulen/vim-easyclip'
 " Keybidings to use Ack in Vim. Use `<leader>a` in visual mode to search a
 " text in the tree.
 Plugin 'mileszs/ack.vim'
@@ -180,12 +180,12 @@ nnoremap <leader>p :tabprevious<cr>
 " }}}
 " ##### Line movement {{{
 " Go to start of line with H and to the end with $
-function! s:MapLineMovements()
+function! g:MapLineMovements()
     map H ^
     map L $
 endfunction
 
-call s:MapLineMovements()
+call g:MapLineMovements()
 
 " Emacs bindings in command-line mode
 cnoremap <C-A> <home>
@@ -279,13 +279,15 @@ let g:ctrlp_working_path_mode = 'a'
 " Custom ignores
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store'
 " }}}
-" ##### Yankring  {{{
-" Set bindings
-let g:yankring_replace_n_pkey = '<c-m>'
-let g:yankring_replace_n_nkey = '<c-n>'
-function! YRRunAfterMaps()
-    call s:MapLineMovements()
-endfunction
+" ##### Easyclip  {{{
+let g:EasyClipEnableBlackHoleRedirect = 0
+let g:EasyClipUsePasteToggleDefaults = 0
+nmap <c-m> <plug>EasyClipSwapPasteForward
+nmap <c-n> <plug>EasyClipSwapPasteBackwards
+let g:EasyClipUseCutDefaults = 0
+nmap d <Plug>MoveMotionPlug
+xmap d <Plug>MoveMotionXPlug
+nmap dd <Plug>MoveMotionLinePlug
 " }}}
 " ##### Ack  {{{
 noremap <C-F> :Ack!<space>
