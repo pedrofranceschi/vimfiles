@@ -282,8 +282,8 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store'
 " ##### Easyclip  {{{
 let g:EasyClipEnableBlackHoleRedirect = 0
 let g:EasyClipUsePasteToggleDefaults = 0
-nmap <c-m> <plug>EasyClipSwapPasteForward
-nmap <c-n> <plug>EasyClipSwapPasteBackwards
+nmap <c-n> <plug>EasyClipSwapPasteForward
+nmap <c-m> <plug>EasyClipSwapPasteBackwards
 let g:EasyClipUseCutDefaults = 0
 nmap d <Plug>MoveMotionPlug
 xmap d <Plug>MoveMotionXPlug
