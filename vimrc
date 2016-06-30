@@ -46,6 +46,7 @@ Plugin 'elixir-lang/vim-elixir'
 Plugin 'embear/vim-localvimrc'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'godlygeek/tabular'
 " }}}
 " ##### Vundle post-setup {{{
 call vundle#end()            " required
@@ -256,6 +257,14 @@ let g:toggle_list_copen_command="Copen"
 " }}}
 " ##### localvimrc {{{
 let g:localvimrc_persistent=1
+" }}}
+" ##### Tabularize {{{
+if exists(":Tabularize")
+	nnoremap <leader>b= :Tabularize /=<CR>
+	vnoremap <leader>b= :Tabularize /=<CR>
+	nnoremap <leader>b: :Tabularize /:\zs<CR>
+	vnoremap <leader>b: :Tabularize /:\zs<CR>
+endif
 " }}}
 " }}}
 " ##### Ack motions {{{

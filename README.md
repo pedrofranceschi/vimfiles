@@ -37,6 +37,7 @@ These are my vimfiles. I created them almost from scratch when I started using V
 * [localvimrc](https://github.com/embear/vim-localvimrc)
 * [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
 * [editorconfig](https://github.com/editorconfig/editorconfig-vim)
+* [Tabular](https://github.com/godlygeek/tabular)
 
 #### Installing (step by step)
 
