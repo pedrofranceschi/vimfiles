@@ -1,0 +1,21 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.vim: .
+    ~/.config/nvim: .
+    ~/.vimrc: vimrc
+    init.vim: vimrc
+    # ~/.config/nvim/init.vim: vimrc
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  -
+    command: vim +PlugInstall +qa
+    stdin: true
+    stdout: true
+    stderr: true
+  - [mkdir tmp]

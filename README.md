@@ -48,31 +48,14 @@ Go to your home directory:
 Clone my vimfiles repo:
 
 
-    git clone --recursive https://github.com/pedrofranceschi/vimfiles.git
-
-Rename the repo to .vim in your home directory:
-
-    mv vimfiles ~/.vim
-
-Link vimrc and gvimrc to your home directory:
-
-    ln -s ~/.vim/vimrc ~/.vimrc
-    ln -s ~/.vim/gvimrc ~/.gvimrc
+    git clone --recursive https://github.com/pedrofranceschi/vimfiles.git .vim
 
 Open "Monaco-Powerline.otf" and click "Install font" to install Powerline's font which supports fancy characters.
 
 	open ~/.vim/Monaco-Powerline.otf
 
-Open Vim:
+Run installer:
 
-	vim
+	cd ~/.vim && ./install
 
-(if you use MacVim):
-
-	mvim
-
-Install bundles by typing
-
-	:PlugInstall
-
-Restart vim and enjoy! :)
+Enjoy! :)
