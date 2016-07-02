@@ -2,55 +2,53 @@
 " Author: Pedro Franceschi <pedrohfranceschi@gmail.com>
 " Source: http://github.com/pedrofranceschi/vimfiles
 
-" ##### Vundle setup  {{{
+" ##### Plug setup  {{{
 set nocompatible              " be iMproved, required
 filetype off                  " required
-" Set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 " "}}}
 " ##### Bundles  {{{
-Plugin 'sjl/badwolf'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'bling/vim-airline'
-Plugin 'b4winckler/vim-objc'
-Plugin 'msanders/snipmate.vim'
-Plugin 'tomtom/tcomment_vim'
-Plugin 'maxbrunsfeld/vim-yankstack'
-Plugin 'mileszs/ack.vim'
-Plugin 'kana/vim-textobj-user'
-Plugin 'nelstrom/vim-textobj-rubyblock'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'tpope/vim-surround'
-Plugin 'Raimondi/delimitMate'
-Plugin 'nelstrom/vim-markdown-folding'
-Plugin 'tpope/vim-repeat'
-Plugin 'nono/vim-handlebars'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'pangloss/vim-javascript'
-Plugin 'milkypostman/vim-togglelist'
-Plugin 'jeffkreeftmeijer/vim-numbertoggle'
-Plugin 'scrooloose/nerdtree'
-Plugin 'michalliu/jsruntime.vim'
-Plugin 'michalliu/jsoncodecs.vim'
-Plugin 'michalliu/sourcebeautify.vim'
-Plugin 'jnwhiteh/vim-golang'
-Plugin 'teranex/jk-jumps.vim'
-Plugin 'tpope/vim-dispatch'
-Plugin 'rstacruz/sparkup'
-Plugin 'haya14busa/incsearch.vim'
-Plugin 'tomasr/molokai'
-Plugin 'rodjek/vim-puppet'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'embear/vim-localvimrc'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'godlygeek/tabular'
-Plugin 'christoomey/vim-tmux-navigator'
+Plug 'sjl/badwolf'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'bling/vim-airline'
+Plug 'b4winckler/vim-objc'
+Plug 'msanders/snipmate.vim'
+Plug 'tomtom/tcomment_vim'
+Plug 'maxbrunsfeld/vim-yankstack'
+Plug 'mileszs/ack.vim'
+Plug 'kana/vim-textobj-user'
+Plug 'nelstrom/vim-textobj-rubyblock'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-surround'
+Plug 'Raimondi/delimitMate'
+Plug 'nelstrom/vim-markdown-folding'
+Plug 'tpope/vim-repeat'
+Plug 'nono/vim-handlebars'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'pangloss/vim-javascript'
+Plug 'milkypostman/vim-togglelist'
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
+Plug 'scrooloose/nerdtree'
+Plug 'michalliu/jsruntime.vim'
+Plug 'michalliu/jsoncodecs.vim'
+Plug 'michalliu/sourcebeautify.vim'
+Plug 'jnwhiteh/vim-golang'
+Plug 'teranex/jk-jumps.vim'
+Plug 'tpope/vim-dispatch'
+Plug 'rstacruz/sparkup'
+Plug 'haya14busa/incsearch.vim'
+Plug 'tomasr/molokai'
+Plug 'rodjek/vim-puppet'
+Plug 'elixir-lang/vim-elixir'
+Plug 'embear/vim-localvimrc'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'godlygeek/tabular'
+Plug 'christoomey/vim-tmux-navigator'
 " }}}
-" ##### Vundle post-setup {{{
-call vundle#end()            " required
+" ##### Plug post-setup {{{
+call plug#end()
 filetype plugin indent on    " required
 " }}}
 " ##### Basic options  {{{

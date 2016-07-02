@@ -1,5 +1,6 @@
 tmp/
 bundle/
+plugged/
 !bundle/Vundle.vim
 *.swp
 .netrwhist

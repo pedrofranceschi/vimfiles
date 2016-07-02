@@ -73,6 +73,6 @@ Open Vim:
 
 Install bundles by typing
 
-	:PluginInstall
+	:PlugInstall
 
 Restart vim and enjoy! :)
