@@ -11,8 +11,7 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  -
-    command: vim +PlugInstall +qa
+  - command: vim +PlugInstall +qa
     stdin: true
     stdout: true
     stderr: true
