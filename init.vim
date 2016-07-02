@@ -1,1 +1,1 @@
-/Users/pedrofranceschi/.dot/vimfiles/vimrc
+vimrc

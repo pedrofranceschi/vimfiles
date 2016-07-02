@@ -8,8 +8,6 @@
     ~/.vim: .
     ~/.config/nvim: .
     ~/.vimrc: vimrc
-    init.vim: vimrc
-    # ~/.config/nvim/init.vim: vimrc
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
@@ -18,4 +16,4 @@
     stdin: true
     stdout: true
     stderr: true
-  - [mkdir tmp]
+  - [mkdir -p tmp]
