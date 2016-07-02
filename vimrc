@@ -47,6 +47,7 @@ Plugin 'embear/vim-localvimrc'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'godlygeek/tabular'
+Plugin 'christoomey/vim-tmux-navigator'
 " }}}
 " ##### Vundle post-setup {{{
 call vundle#end()            " required
@@ -152,12 +153,6 @@ cnoremap <C-A> <home>
 cnoremap <C-E> <end>
 " }}}
 " ##### Split windows {{{
-" Move around easily
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
-
 " Create windows
 nnoremap <leader>v <C-w>v<C-w>l
 nnoremap <leader>m <C-w>s<C-w>j
@@ -196,6 +191,9 @@ noremap <C-C> <esc>
 
 " Go full-screen
 nnoremap <leader>fs :set lines=999 columns=9999<cr>
+
+" Fix C-h on Neovim (read https://github.com/christoomey/vim-tmux-navigator#it-doesnt-work-in-neovim-specifically-c-h)
+nnoremap <silent> <BS> :TmuxNavigateLeft<cr>
 " }}}
 " }}}
 " ##### Plugin settings  {{{
@@ -281,7 +279,6 @@ endif
 nnoremap <silent> <leader>a :set opfunc=<SID>AckMotion<CR>g@
 xnoremap <silent> <leader>a :<C-U>call <SID>AckMotion(visualmode())<CR>
 
-nnoremap <bs> :Ack! '\b<c-r><c-w>\b'<cr>
 xnoremap <silent> <bs> :<C-U>call <SID>AckMotion(visualmode())<CR>
 
 function! s:CopyMotionForType(type)
