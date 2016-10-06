@@ -255,12 +255,12 @@ let g:toggle_list_copen_command="Copen"
 let g:localvimrc_persistent=1
 " }}}
 " ##### Tabularize {{{
-if exists(":Tabularize")
-	nnoremap <leader>b= :Tabularize /=<CR>
-	vnoremap <leader>b= :Tabularize /=<CR>
-	nnoremap <leader>b: :Tabularize /:\zs<CR>
-	vnoremap <leader>b: :Tabularize /:\zs<CR>
-endif
+nnoremap <leader>b= :Tabularize /=<CR>
+vnoremap <leader>b= :Tabularize /=<CR>
+nnoremap <leader>b: :Tabularize /:\zs<CR>
+vnoremap <leader>b: :Tabularize /:\zs<CR>
+nnoremap <leader>b<space> :Tabularize / <CR>
+vnoremap <leader>b<space> :Tabularize / <CR>
 " }}}
 " }}}
 " ##### Ack motions {{{
@@ -330,6 +330,9 @@ autocmd BufRead,BufNewFile *.md set filetype=markdown
 autocmd BufRead,BufNewFile *.md set wrap
 
 autocmd BufEnter *.md colorscheme badwolf
+
+" Set textwidth to 80 columns
+autocmd FileType md set textwidth=80
 " }}}
 " ##### JavaScript  {{{
 " Sets javascript syntax for *.json files.
@@ -354,5 +357,13 @@ nnoremap <leader>csv ggV/^+-<cr>dGV?^+-<cr>dgg:g/^+-/d<cr>:%s/^<bar> \<bar> <bar
 " ##### LookML {{{
 " Sets YAML syntax for *.lookml files.
 autocmd BufRead,BufNewFile *.lookml set filetype=yaml
+" }}}
+" ##### LaTeX {{{
+" Build .tex files automatically
+" autocmd FileType tex nnoremap <leader>c :!pdflatex %<cr>
+" autocmd FileType tex nnoremap <leader>c :!pdflatex %<cr>
+autocmd BufWritePost *.tex !pdflatex %
+" Set textwidth to 80 columns
+autocmd FileType tex set textwidth=80
 " }}}
 " }}}
