@@ -36,7 +36,6 @@ Plug 'michalliu/sourcebeautify.vim'
 Plug 'jnwhiteh/vim-golang'
 Plug 'teranex/jk-jumps.vim'
 Plug 'tpope/vim-dispatch'
-Plug 'rstacruz/sparkup'
 Plug 'haya14busa/incsearch.vim'
 Plug 'tomasr/molokai'
 Plug 'rodjek/vim-puppet'
@@ -46,6 +45,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'godlygeek/tabular'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'leafgarland/typescript-vim'
+Plug 'Quramy/vim-js-pretty-template'
 " }}}
 " ##### Plug post-setup {{{
 call plug#end()
