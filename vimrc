@@ -28,7 +28,6 @@ Plug 'nono/vim-handlebars'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'pangloss/vim-javascript'
 Plug 'milkypostman/vim-togglelist'
-Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'scrooloose/nerdtree'
 Plug 'michalliu/jsruntime.vim'
 Plug 'michalliu/jsoncodecs.vim'
@@ -246,9 +245,6 @@ nmap <C-N> <Plug>yankstack_substitute_newer_paste
 " ##### Ack  {{{
 noremap <C-F> :Ack!<space>
 " }}}
-" ##### Number toggle  {{{
-let g:NumberToggleTrigger="<leader>ll"
-"}}}
 " ##### togglelist {{{
 let g:toggle_list_copen_command="Copen"
 " }}}
@@ -264,6 +260,18 @@ nnoremap <leader>b<space> :Tabularize / <CR>
 vnoremap <leader>b<space> :Tabularize / <CR>
 " }}}
 " }}}
+" ##### Custom functions {{{
+" ##### Number toggle  {{{
+function! NumberToggle()
+	if(&relativenumber == 1)
+		set number
+	else
+		set relativenumber
+	endif
+endfunc
+
+nnoremap <leader>ll :call NumberToggle()<cr>
+"}}}
 " ##### Ack motions {{{
 " (from Steve Losh's vimrc)
 " Motions to Ack for things.  Works with pretty much everything, including:
@@ -297,6 +305,7 @@ function! s:AckMotion(type) abort
 
     let @@ = reg_save
 endfunction
+" }}}
 " }}}
 " ##### Filetype-specific  {{{
 " ##### Ruby  {{{
