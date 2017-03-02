@@ -233,7 +233,7 @@ let g:airline#extensions#default#section_truncate_width = {
 " Works not only in ancestor directories of my working directory.
 let g:ctrlp_working_path_mode = 'a'
 " Custom ignores
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store|_build\'
 " }}}
 " ##### Yankstack  {{{
 " Don't use default mappings
