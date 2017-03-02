@@ -46,6 +46,7 @@ Plug 'godlygeek/tabular'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'leafgarland/typescript-vim'
 Plug 'Quramy/vim-js-pretty-template'
+Plug 'keith/swift.vim'
 " }}}
 " ##### Plug post-setup {{{
 call plug#end()
@@ -375,5 +376,9 @@ autocmd BufRead,BufNewFile *.lookml set filetype=yaml
 autocmd BufWritePost *.tex !pdflatex %
 " Set textwidth to 80 columns
 autocmd FileType tex set textwidth=80
+" }}}
+" ##### Swift {{{
+" Enable autocomplete using deoplete
+autocmd FileType swift imap <buffer> <C-k> <Plug>(autocomplete_swift_jump_to_placeholder)
 " }}}
 " }}}
