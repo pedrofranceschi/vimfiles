@@ -47,6 +47,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'leafgarland/typescript-vim'
 Plug 'Quramy/vim-js-pretty-template'
 Plug 'keith/swift.vim'
+Plug 'benmills/vimux'
 " }}}
 " ##### Plug post-setup {{{
 call plug#end()
@@ -259,6 +260,11 @@ nnoremap <leader>b: :Tabularize /:\zs<CR>
 vnoremap <leader>b: :Tabularize /:\zs<CR>
 nnoremap <leader>b<space> :Tabularize / <CR>
 vnoremap <leader>b<space> :Tabularize / <CR>
+" }}}
+" ##### Vimux {{{
+nnoremap <leader>rc :VimuxPromptCommand<CR>
+nnoremap <leader>rr :VimuxRunLastCommand <CR>
+nnoremap <leader>rz :VimuxZoomRunner <CR>
 " }}}
 " }}}
 " ##### Custom functions {{{
