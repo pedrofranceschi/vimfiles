@@ -48,6 +48,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'Quramy/vim-js-pretty-template'
 Plug 'keith/swift.vim'
 Plug 'benmills/vimux'
+Plug 'hashivim/vim-terraform'
 " }}}
 " ##### Plug post-setup {{{
 call plug#end()
@@ -102,9 +103,12 @@ set nowritebackup
 set directory=$HOME/.vim/tmp//,.
 
 " Global tab width.
-set tabstop=4
-" And again, related.
-set shiftwidth=4
+set tabstop=2
+" And again, related
+set shiftwidth=2
+" Spaces, please
+set expandtab
+
 
 " Files open expanded
 set foldlevelstart=50
@@ -124,7 +128,6 @@ set mouse=a
 
 " Automatically reads changed files
 set autoread
-
 
 " Enable syntax highlighting
 syntax on
@@ -386,5 +389,15 @@ autocmd FileType tex set textwidth=80
 " ##### Swift {{{
 " Enable autocomplete using deoplete
 autocmd FileType swift imap <buffer> <C-k> <Plug>(autocomplete_swift_jump_to_placeholder)
+" }}}
+" ##### Terraform {{{
+" Enable autocomplete using deoplete
+autocmd FileType terraform set shiftwidth=2
+autocmd FileType terraform set tabstop=2
+autocmd FileType terraform set expandtab
+" }}}
+" ##### Elixir {{{
+" Enable autocomplete using deoplete
+autocmd FileType elixir nnoremap <leader>rt :call VimuxRunCommand("script/mix test " . bufname("%"))<CR>
 " }}}
 " }}}
