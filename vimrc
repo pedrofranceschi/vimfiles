@@ -49,6 +49,8 @@ Plug 'Quramy/vim-js-pretty-template'
 Plug 'keith/swift.vim'
 Plug 'benmills/vimux'
 Plug 'hashivim/vim-terraform'
+Plug 'mxw/vim-jsx'
+Plug 'tpope/vim-rhubarb'
 " }}}
 " ##### Plug post-setup {{{
 call plug#end()
@@ -365,6 +367,7 @@ autocmd BufRead,BufNewFile *.ejs set filetype=html
 " Make vimrcs open folded
 autocmd FileType vim set foldlevel=0
 autocmd FileType vim set foldmethod=marker
+let g:jsx_ext_required = 0
 " }}}
 " ##### XML {{{
 " Automatically format XML files
