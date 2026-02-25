@@ -51,6 +51,8 @@ Plug 'benmills/vimux'
 Plug 'hashivim/vim-terraform'
 Plug 'mxw/vim-jsx'
 Plug 'tpope/vim-rhubarb'
+Plug 'udalov/kotlin-vim'
+Plug 'MaxMEllon/vim-jsx-pretty'
 " }}}
 " ##### Plug post-setup {{{
 call plug#end()
@@ -148,6 +150,13 @@ nnoremap <leader>c :tabclose<cr>
 nnoremap <leader>n :tabnext<cr>
 nnoremap <leader>p :tabprevious<cr>
 " }}}
+" ##### Buffers {{{
+" Navigate to previous/next buffer
+nnoremap <leader>[ :bprevious<cr>
+nnoremap <leader>] :bnext<cr>
+" List all buffers
+nnoremap <leader>bl :ls<cr>
+" }}}
 " ##### Line movement {{{
 " Go to start of line with H and to the end with $
 noremap H ^
@@ -205,10 +214,10 @@ nnoremap <silent> <BS> :TmuxNavigateLeft<cr>
 " ##### Fugitive  {{{
 " (thanks to Steve Losh's vimrc)
 nnoremap <leader>gd :Gdiff<cr>
-nnoremap <leader>gs :Gstatus<cr>
+nnoremap <leader>gs :G<cr>
 nnoremap <leader>gw :Gwrite<cr>
 nnoremap <leader>ga :Gadd<cr>
-nnoremap <leader>gb :Gblame<cr>
+nnoremap <leader>gb :Git blame<cr>
 nnoremap <leader>gci :Gcommit<cr>
 nnoremap <leader>ge :Gedit<cr>
 nnoremap <leader>gm :Gmove
@@ -362,6 +371,9 @@ autocmd BufRead,BufNewFile *.json set filetype=javascript
 
 " Sets html syntax for *.ejs files.
 autocmd BufRead,BufNewFile *.ejs set filetype=html
+
+" Sets typescript syntax for *.tsx files.
+autocmd BufRead,BufNewFile *.tsx set filetype=typescript
 " }}}
 " ##### Vim {{{
 " Make vimrcs open folded
