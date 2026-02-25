@@ -5,6 +5,10 @@
 " ##### Plug setup  {{{
 set nocompatible              " be iMproved, required
 filetype off                  " required
+
+" Disable vim-tmux-navigator default mappings (we'll create our own)
+let g:tmux_navigator_no_mappings = 1
+
 call plug#begin('~/.vim/plugged')
 " "}}}
 " ##### Bundles  {{{
@@ -68,6 +72,13 @@ set showmode
 set backspace=indent,eol,start
 " Handle multiple buffers better.
 set hidden
+
+" Enable focus events for tmux integration
+set ttimeout
+set ttimeoutlen=50
+if has('nvim') || has('gui_running')
+  set termguicolors
+endif
 
 " Enhanced command line completion.
 set wildmenu
@@ -208,6 +219,73 @@ nnoremap <leader>fs :set lines=999 columns=9999<cr>
 
 " Fix C-h on Neovim (read https://github.com/christoomey/vim-tmux-navigator#it-doesnt-work-in-neovim-specifically-c-h)
 nnoremap <silent> <BS> :TmuxNavigateLeft<cr>
+
+" Store original highlight settings
+let s:vim_is_dimmed = 0
+
+" Dim vim when navigating out to tmux pane (only dim text content)
+function! s:DimVim()
+  if s:vim_is_dimmed
+    return
+  endif
+  let s:vim_is_dimmed = 1
+  syntax off
+  hi Normal ctermfg=244 ctermbg=236
+  hi NonText ctermfg=244 ctermbg=236
+  " Make airline statusline inactive
+  call setwinvar(winnr(), 'airline_active', 0)
+  call airline#update_statusline_inactive([winnr()])
+endfunction
+
+function! s:BrightenVim()
+  if !s:vim_is_dimmed
+    return
+  endif
+  let s:vim_is_dimmed = 0
+  syntax on
+  hi clear Normal
+  hi clear NonText
+  " Make airline statusline active again
+  call setwinvar(winnr(), 'airline_active', 1)
+  call airline#update_statusline()
+endfunction
+
+" Custom command to brighten (sent from tmux when entering vim pane)
+command! B call s:BrightenVim()
+
+" Detect when navigating back into vim or moving cursor
+augroup TmuxNavigatorDim
+  autocmd!
+  autocmd WinEnter * call s:BrightenVim()
+  autocmd CursorMoved * call s:BrightenVim()
+  autocmd CursorMovedI * call s:BrightenVim()
+  autocmd BufEnter * call s:BrightenVim()
+augroup END
+
+" Wrap navigation commands to detect leaving vim
+function! s:WrappedNavigate(command)
+  let l:oldwin = winnr()
+  execute a:command
+  " If window didn't change, we likely left vim to tmux
+  if winnr() == l:oldwin
+    call s:DimVim()
+  else
+    " If window changed within vim, brighten
+    call s:BrightenVim()
+  endif
+endfunction
+
+" These mappings brighten when coming back into vim
+function! s:BrightenAndNavigate(command)
+  call s:BrightenVim()
+  execute a:command
+endfunction
+
+nnoremap <silent> <c-h> :<C-U>call <SID>WrappedNavigate('TmuxNavigateLeft')<cr>
+nnoremap <silent> <c-j> :<C-U>call <SID>WrappedNavigate('TmuxNavigateDown')<cr>
+nnoremap <silent> <c-k> :<C-U>call <SID>WrappedNavigate('TmuxNavigateUp')<cr>
+nnoremap <silent> <c-l> :<C-U>call <SID>WrappedNavigate('TmuxNavigateRight')<cr>
+
 " }}}
 " }}}
 " ##### Plugin settings  {{{
@@ -235,7 +313,7 @@ let g:NERDTreeHijackNetrw = 0
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'powerlineish'
 let g:airline_section_warning = ''
-let g:airline_inactive_collapse = 0
+let g:airline_inactive_collapse = 1
 let g:airline#extensions#default#section_truncate_width = {
   \ 'a': 60,
   \ 'b': 80,
