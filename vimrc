@@ -148,6 +148,10 @@ set autoread
 syntax on
 " Sets the colorscheme for terminal sessions too.
 colorscheme molokai
+
+" Disable Background Color Erase (BCE) so the terminal background isn't
+" painted with vim's current bg color on exit — prevents green screen over SSH.
+set t_ut=
 autocmd BufEnter * colorscheme molokai
 
 " Leader = ,
@@ -252,6 +256,9 @@ endfunction
 
 " Custom command to brighten (sent from tmux when entering vim pane)
 command! B call s:BrightenVim()
+
+" Reset terminal colors on exit so the pane doesn't stay dimmed/colored
+autocmd VimLeave * hi Normal ctermbg=NONE ctermfg=NONE
 
 " Detect when navigating back into vim or moving cursor
 augroup TmuxNavigatorDim
