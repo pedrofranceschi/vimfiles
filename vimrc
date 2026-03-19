@@ -327,6 +327,8 @@ let g:airline#extensions#default#section_truncate_width = {
 let g:ctrlp_working_path_mode = 'a'
 " Custom ignores
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store|_build\'
+" Refresh CtrlP buffers
+nnoremap <leader>rr :ClearAllCtrlPCaches <CR>
 " }}}
 " ##### Yankstack  {{{
 " Don't use default mappings
@@ -354,9 +356,9 @@ nnoremap <leader>b<space> :Tabularize / <CR>
 vnoremap <leader>b<space> :Tabularize / <CR>
 " }}}
 " ##### Vimux {{{
-nnoremap <leader>rc :VimuxPromptCommand<CR>
-nnoremap <leader>rr :VimuxRunLastCommand <CR>
-nnoremap <leader>rz :VimuxZoomRunner <CR>
+" nnoremap <leader>rc :VimuxPromptCommand<CR>
+" nnoremap <leader>rr :VimuxRunLastCommand <CR>
+" nnoremap <leader>rz :VimuxZoomRunner <CR>
 " }}}
 " }}}
 " ##### Custom functions {{{
